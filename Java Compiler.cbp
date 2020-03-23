@@ -36,11 +36,11 @@
 		</Compiler>
 		<Unit filename="include/Edge.h" />
 		<Unit filename="include/NFA.h" />
-		<Unit filename="include/Regular_Def.h" />
+		<Unit filename="include/RegularDef.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Edge.cpp" />
 		<Unit filename="src/NFA.cpp" />
-		<Unit filename="src/Regular_Def.cpp" />
+		<Unit filename="src/RegularDef.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
