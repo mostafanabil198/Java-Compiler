@@ -64,3 +64,58 @@
 	<bits/stdc++.h>
 	<iostream>
 
+1585002947 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Edge.cpp
+	"Edge.h"
+
+1585014780 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/Edge.h
+	<string>
+	"Node.h"
+	"RegularDef.h"
+
+1585014780 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/Node.h
+	<bits/stdc++.h>
+	"Edge.h"
+
+1585014780 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/RegularDef.h
+	"Graph.h"
+	"GeneralMethods.h"
+	<iostream>
+	<stack>
+
+1585014780 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/Graph.h
+	<bits/stdc++.h>
+	"Edge.h"
+	"Node.h"
+	"RegularDef.h"
+
+1585019746 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/GeneralMethods.h
+	<bits/stdc++.h>
+	"RegularDef.h"
+	"Graph.h"
+
+1585014780 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Graph.cpp
+	"Graph.h"
+	<bits/stdc++.h>
+	"Node.h"
+
+1585003181 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/NFA.cpp
+	"NFA.h"
+
+1585015014 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/NFA.h
+	"ReadInput.h"
+	"Graph.h"
+
+1585014780 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Node.cpp
+	"Node.h"
+	"Edge.h"
+	<bits/stdc++.h>
+
+1585014780 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/RegularDef.cpp
+	"RegularDef.h"
+
+1585019724 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/GeneralMethods.cpp
+	"GeneralMethods.h"
+	"RegularDef.h"
+	<bits/stdc++.h>
+	<iostream>
+

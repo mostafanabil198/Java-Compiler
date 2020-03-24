@@ -2,7 +2,7 @@
 #define NFA_H
 using namespace std;
 
-//#include "ReadInput.h"
+#include "ReadInput.h"
 #include "Graph.h"
 
 class NFA
