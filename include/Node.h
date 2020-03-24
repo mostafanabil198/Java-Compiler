@@ -1,10 +1,10 @@
 #ifndef NODE_H
 #define NODE_H
-#include "Edge.h"
 #include <bits/stdc++.h>
-using namespace std;
+#include "Edge.h"
 #define normal_state "none"
-
+using namespace std;
+class Edge;
 class Node
 {
     public:
@@ -21,7 +21,7 @@ class Node
 
     private:
     int id;
-    vector<Edge*> entering_Edges;
+    vector< Edge* > entering_Edges;
     vector<Edge*> leaving_Edges;
     string accepted_input;
     int priority;

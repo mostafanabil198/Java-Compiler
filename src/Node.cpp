@@ -1,4 +1,5 @@
 #include "Node.h"
+#include "Edge.h"
 #include <bits/stdc++.h>
 Node::Node(int id)
 {

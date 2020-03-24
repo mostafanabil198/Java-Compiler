@@ -1,6 +1,6 @@
 #include "Graph.h"
 #include <bits/stdc++.h>
-
+#include "Node.h"
 using namespace std;
 
 Graph::Graph()
@@ -22,8 +22,8 @@ bool Graph::addEdge(Node * src, Node* Dest, RegularDef* weight)
     if(this->getTargetNode(src, weight) == Dest)
         return false;
     Edge* transition = new Edge(src, Dest, weight);
-    src->insertEdge(transition, false);
-    Dest->insertEdge(transition, true);
+    src->insert_edge(transition, false);
+    Dest->insert_edge(transition, true);
     this->transitions.push_back(transition);
     return true;
 
@@ -64,7 +64,7 @@ void Graph::set_accept_state(Node* new_accepted)
 {
     if(find(nodes.begin(), nodes.end(), new_accepted) == nodes.end())
         this->nodes.push_back(new_accepted);
-    this.accept_state=new_accepted;
+    this->accept_state=new_accepted;
 }
 vector<Edge*> Graph::get_tansitions()
 {

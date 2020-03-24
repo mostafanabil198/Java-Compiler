@@ -14,7 +14,7 @@ Graph* RegularDef::get_regular_def() {
 }
 
 bool RegularDef::accepts(string input) {
-    if(regular_def->get_nodes().size() == 1){
+    if(regular_def->get_all_nodes().size() == 1){
        string accepted_input = regular_def->get_accept_state()->get_accepted_input();
         cout<<"accepted_input:" << accepted_input << "input :   " << input<<endl; //-
        if(accepted_input.at(0) == '\\') {
@@ -40,7 +40,7 @@ Node* RegularDef::dfs(Node* start, int states_number, string input) {
 
     stack<Node*> stack;
 
-    visited[start->getId()] = true;
+    visited[start->get_id()] = true;
     stack.push(start);
 
     while(!stack.empty())

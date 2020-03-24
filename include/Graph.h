@@ -3,13 +3,17 @@
 #include <bits/stdc++.h>
 #include "Edge.h"
 #include "Node.h"
-
+#include "RegularDef.h"
+using namespace std;
+class RegularDef;
+class Node;
+class Edge;
 class Graph
 {
     public:
     Graph();
     bool addEdge(Node * src, Node* Dest, RegularDef* weight);
-    void mergeGraph(vector<Edge*> edges, vector<Node*> nodes);
+    void mergeGraph(vector <Edge*> edges, vector <Node*> nodes);
     Node* get_start_state();
     Node* get_accept_state();
     vector<Node*> get_all_nodes();

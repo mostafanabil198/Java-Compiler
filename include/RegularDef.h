@@ -1,12 +1,10 @@
 #ifndef REGULARDEF_H
 #define REGULARDEF_H
-using namespace std;
-
 #include "Graph.h"
-#include "RegularDefTable.h"
+#include "DefTable.h"
 #include <iostream>
 #include <stack>
-
+using namespace std;
 class RegularDef
 {
     public:

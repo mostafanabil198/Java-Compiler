@@ -5,3 +5,51 @@
 1584994126 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/main.cpp
 	<iostream>
 
+1585007596 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Edge.cpp
+	"Edge.h"
+
+1585012650 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Edge.h
+	<string>
+	"Node.h"
+	"RegularDef.h"
+
+1585012597 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Node.h
+	<bits/stdc++.h>
+	"Edge.h"
+
+1585010586 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/RegularDef.h
+	"Graph.h"
+	"DefTable.h"
+	<iostream>
+	<stack>
+
+1585012865 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Graph.h
+	<bits/stdc++.h>
+	"Edge.h"
+	"Node.h"
+	"RegularDef.h"
+
+1585013695 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/DefTable.h
+	<bits/stdc++.h>
+	"RegularDef.h"
+	"Graph.h"
+
+1585009398 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Node.cpp
+	"Node.h"
+	"Edge.h"
+	<bits/stdc++.h>
+
+1585012974 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/RegularDef.cpp
+	"RegularDef.h"
+
+1585013240 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Graph.cpp
+	"Graph.h"
+	<bits/stdc++.h>
+	"Node.h"
+
+1585013536 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/DefTable.cpp
+	"DefTable.h"
+	"RegularDef.h"
+	<bits/stdc++.h>
+	<iostream>
+

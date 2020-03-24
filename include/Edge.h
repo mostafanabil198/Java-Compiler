@@ -7,7 +7,7 @@ using namespace std;
 #include "RegularDef.h"
 
 #define EPS "eps"
-
+class RegularDef;
 class Edge
 {
     public:
