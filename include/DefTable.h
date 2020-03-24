@@ -1,7 +1,7 @@
 #ifndef DEFTABLE_H
 #define DEFTABLE_H
 #include <bits/stdc++.h>
-#include "RegularDef"
+#include "RegularDef.h"
 
 class DefTable
 {
