@@ -6,10 +6,10 @@
 using namespace std;
 class RegularDef;
 class Graph;
-class DefTable
+class GeneralMethods
 {
     public:
-    static DefTable* getInstance();
+    static GeneralMethods* getInstance();
     map<string, RegularDef*> getTable();
     RegularDef* getDefinitions(string id);
     void insertInMap(string id, RegularDef* definition);
@@ -30,7 +30,7 @@ class DefTable
     map<string, RegularDef*> definitions;
     vector<string> helpers;
     RegularDef *eps;
-     DefTable();
+     GeneralMethods();
 };
 
 #endif // DEFTABLE_H

@@ -5,7 +5,7 @@ RegularDef::RegularDef(Graph *regular_def)
     this->regular_def = regular_def;
 }
 
-bool RegularDef::set_regular_def(Graph *regular_def) {
+void RegularDef::set_regular_def(Graph *regular_def) {
     this->regular_def = regular_def;
 }
 

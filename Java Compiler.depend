@@ -17,9 +17,9 @@
 	<bits/stdc++.h>
 	"Edge.h"
 
-1585010586 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/RegularDef.h
+1585014602 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/RegularDef.h
 	"Graph.h"
-	"DefTable.h"
+	"GeneralMethods.h"
 	<iostream>
 	<stack>
 
@@ -49,6 +49,17 @@
 
 1585013536 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/DefTable.cpp
 	"DefTable.h"
+	"RegularDef.h"
+	<bits/stdc++.h>
+	<iostream>
+
+1585014451 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/GeneralMethods.h
+	<bits/stdc++.h>
+	"RegularDef.h"
+	"Graph.h"
+
+1585014336 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/GeneralMethods.cpp
+	"GeneralMethods.h"
 	"RegularDef.h"
 	<bits/stdc++.h>
 	<iostream>

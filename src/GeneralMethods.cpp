@@ -1,11 +1,11 @@
-#include "DefTable.h"
+#include "GeneralMethods.h"
 #include "RegularDef.h"
 #include <bits/stdc++.h>
 #include <iostream>
 
-static DefTable* instance;
+static GeneralMethods* instance;
 
-DefTable::DefTable()
+GeneralMethods::GeneralMethods()
 {
     Graph* initial_graph = new Graph();
     Node* n = new Node(0);
@@ -24,32 +24,32 @@ DefTable::DefTable()
     eps = this->getDefinitions(EPS);
 }
 
-DefTable* DefTable::getInstance()
+GeneralMethods* GeneralMethods::getInstance()
 {
     if(instance == NULL) {
-        instance = new DefTable();
+        instance = new GeneralMethods();
     }
     return instance;
 }
-map<string, RegularDef*> DefTable::getTable()
+map<string, RegularDef*> GeneralMethods::getTable()
 {
         return this->definitions;
 }
-RegularDef* DefTable::getDefinitions(string id)
+RegularDef* GeneralMethods::getDefinitions(string id)
 {
        if(this->definitions.count(id)) return definitions[id];
         return NULL;
 }
-void DefTable::insertInMap(string id, RegularDef* definition)
+void GeneralMethods::insertInMap(string id, RegularDef* definition)
 {
     this->definitions.insert(pair<string, RegularDef*>(id, definition));
 }
 
-vector<string> DefTable::get_helpers() {
+vector<string> GeneralMethods::get_helpers() {
     return this->helpers;
 }
 
-Graph* DefTable::mergeGraphs(Graph *graph_A, Graph *graph_B, string helper, int* id) {
+Graph* GeneralMethods::mergeGraphs(Graph *graph_A, Graph *graph_B, string helper, int* id) {
 
     if(helper == "|")
         return mergeOr(graph_A, graph_B, id);
@@ -66,7 +66,7 @@ Graph* DefTable::mergeGraphs(Graph *graph_A, Graph *graph_B, string helper, int*
 
 }
 
-Graph *DefTable::mergeOr(Graph *graph_A, Graph *graph_B, int* i) {
+Graph *GeneralMethods::mergeOr(Graph *graph_A, Graph *graph_B, int* i) {
     if(graph_B == NULL)
         return graph_A;
     if(graph_A == NULL)
@@ -102,7 +102,7 @@ Graph *DefTable::mergeOr(Graph *graph_A, Graph *graph_B, int* i) {
     return result_graph;
 }
 
-Graph *DefTable::mergePlus(Graph *graph_A, int* i) {
+Graph *GeneralMethods::mergePlus(Graph *graph_A, int* i) {
     if(graph_A == NULL)
         return graph_A;
     Node* start_state = graph_A->get_start_state();
@@ -124,7 +124,7 @@ Graph *DefTable::mergePlus(Graph *graph_A, int* i) {
     return result_graph;
 }
 
-Graph *DefTable::mergeAst(Graph *graph_A, int* i) {
+Graph *GeneralMethods::mergeAst(Graph *graph_A, int* i) {
     if(graph_A == NULL)
         return graph_A;
 
@@ -136,7 +136,7 @@ Graph *DefTable::mergeAst(Graph *graph_A, int* i) {
     result_graph->get_accept_state()->set_accepted_input(id);
     return result_graph;
 }
-Graph *DefTable::mergeCont(Graph *graph_A, Graph *graph_B, int* i) {
+Graph *GeneralMethods::mergeCont(Graph *graph_A, Graph *graph_B, int* i) {
     if(graph_B == NULL)
         return graph_A;
     if(graph_A == NULL)
@@ -163,7 +163,7 @@ Graph *DefTable::mergeCont(Graph *graph_A, Graph *graph_B, int* i) {
     return result_graph;
 }
 
-bool DefTable::isAhelper(string s) {
+bool GeneralMethods::isAhelper(string s) {
     for (int i = 0; i < helpers.size(); ++i) {
         if(s == helpers[i])
             return true;
