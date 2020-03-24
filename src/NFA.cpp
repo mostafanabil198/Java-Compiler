@@ -16,7 +16,7 @@ Graph* NFA::get_automata() {
     return this->automata;
 }
 
-bool NFA::set_automata(Graph *graph) {
+void NFA::set_automata(Graph *graph) {
     this->automata = graph;
 }
 
