@@ -152,3 +152,141 @@
 1585075062 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Tokenizing.cpp
 	"Tokenizing.h"
 
+1585075996 source:/home/nashar/Desktop/c projects/Java-Compiler/main.cpp
+	<iostream>
+
+1585075996 source:/home/nashar/Desktop/c projects/Java-Compiler/src/Edge.cpp
+	"Edge.h"
+
+1585075996 /home/nashar/Desktop/c projects/Java-Compiler/include/Edge.h
+	<string>
+	"Node.h"
+	"RegularDef.h"
+
+1585075996 /home/nashar/Desktop/c projects/Java-Compiler/include/Node.h
+	<bits/stdc++.h>
+	"Edge.h"
+
+1585075996 /home/nashar/Desktop/c projects/Java-Compiler/include/RegularDef.h
+	"Graph.h"
+	"GeneralMethods.h"
+	<iostream>
+	<stack>
+
+1585075996 /home/nashar/Desktop/c projects/Java-Compiler/include/Graph.h
+	<bits/stdc++.h>
+	"Edge.h"
+	"Node.h"
+	"RegularDef.h"
+
+1585075996 /home/nashar/Desktop/c projects/Java-Compiler/include/GeneralMethods.h
+	<bits/stdc++.h>
+	"RegularDef.h"
+	"Graph.h"
+
+1585075996 source:/home/nashar/Desktop/c projects/Java-Compiler/src/GeneralMethods.cpp
+	"GeneralMethods.h"
+	"RegularDef.h"
+	<bits/stdc++.h>
+	<iostream>
+
+1585075996 source:/home/nashar/Desktop/c projects/Java-Compiler/src/Graph.cpp
+	"Graph.h"
+	<bits/stdc++.h>
+	"Node.h"
+
+1585169262 source:/home/nashar/Desktop/c projects/Java-Compiler/src/NFA.cpp
+	"NFA.h"
+
+1585169262 /home/nashar/Desktop/c projects/Java-Compiler/include/NFA.h
+	"ReadRules.h"
+	"Graph.h"
+
+1585169262 /home/nashar/Desktop/c projects/Java-Compiler/include/ReadRules.h
+	<bits/stdc++.h>
+	"ExpNfa.h"
+
+1585169262 /home/nashar/Desktop/c projects/Java-Compiler/include/ExpNfa.h
+	<bits/stdc++.h>
+	"Tokenizing.h"
+	"Graph.h"
+	"NFA.h"
+	"RegularDef.h"
+	"GeneralMethods.h"
+
+1585075996 /home/nashar/Desktop/c projects/Java-Compiler/include/Tokenizing.h
+	<bits/stdc++.h>
+	<string>
+	<vector>
+	<list>
+	<cstring>
+	<sstream>
+	<algorithm>
+	"GeneralMethods.h"
+
+1585075996 source:/home/nashar/Desktop/c projects/Java-Compiler/src/Node.cpp
+	"Node.h"
+	"Edge.h"
+	<bits/stdc++.h>
+
+1585075996 source:/home/nashar/Desktop/c projects/Java-Compiler/src/RegularDef.cpp
+	"RegularDef.h"
+
+1585169262 source:/home/nashar/Desktop/c projects/Java-Compiler/src/Tokenizing.cpp
+	"Tokenizing.h"
+
+1585177950 source:/home/nashar/Desktop/c projects/Java-Compiler/src/DFAA_minimization.cpp
+	"DFAA_minimization.h"
+
+1585170697 /home/nashar/Desktop/c projects/Java-Compiler/include/DFAA_minimization.h
+	<vector>
+	<map>
+	<set>
+	<iterator>
+	<string.h>
+	<iostream>
+	"RegularDef.h"
+	"Node.h"
+	"DFA.h"
+	"Graph.h"
+	"GeneralMethods.h"
+
+1585177763 /home/nashar/Desktop/c projects/Java-Compiler/include/DFA.h
+	<vector>
+	<map>
+	<set>
+	"RegularDef.h"
+	"Node.h"
+
+1585178025 source:/home/nashar/Desktop/c projects/Java-Compiler/src/DFA.cpp
+	<list>
+	<iostream>
+	<algorithm>
+	"DFA.h"
+	"NFA.h"
+	"GeneralMethods.h"
+
+1585169262 source:/home/nashar/Desktop/c projects/Java-Compiler/src/ReadRules.cpp
+	"ReadRules.h"
+	<fstream>
+	<sstream>
+
+1585169262 source:/home/nashar/Desktop/c projects/Java-Compiler/src/ExpNfa.cpp
+	"ExpNfa.h"
+
+1585179902 source:/home/nashar/Desktop/c projects/Java-Compiler/src/DFA_minimization.cpp
+	"DFA_minimization.h"
+
+1585179374 /home/nashar/Desktop/c projects/Java-Compiler/include/DFA_minimization.h
+	<vector>
+	<map>
+	<set>
+	<iterator>
+	<string.h>
+	<iostream>
+	"RegularDef.h"
+	"Node.h"
+	"DFA.h"
+	"Graph.h"
+	"GeneralMethods.h"
+
