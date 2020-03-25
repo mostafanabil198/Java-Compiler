@@ -28,6 +28,7 @@ void Tokenizing::parse_string(string word) {
     for (int i = 0; i < word.length() ; ++i) {
         char c = word.at(i);
         // handle special chars + and - to set the cur char as \\- or \\+
+        if((!((c > 32) && (c < 127))) || iscntrl(c)) continue;
         if(c == '+' || c == '-') {
             if(prev_string == "\\"){
                 prev_string.clear();

@@ -39,7 +39,7 @@
 	"Edge.h"
 	<bits/stdc++.h>
 
-1585012974 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/RegularDef.cpp
+1585014602 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/RegularDef.cpp
 	"RegularDef.h"
 
 1585013240 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Graph.cpp
@@ -53,12 +53,12 @@
 	<bits/stdc++.h>
 	<iostream>
 
-1585014451 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/GeneralMethods.h
+1585070416 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/GeneralMethods.h
 	<bits/stdc++.h>
 	"RegularDef.h"
 	"Graph.h"
 
-1585014336 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/GeneralMethods.cpp
+1585070416 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/GeneralMethods.cpp
 	"GeneralMethods.h"
 	"RegularDef.h"
 	<bits/stdc++.h>
@@ -98,11 +98,11 @@
 	<bits/stdc++.h>
 	"Node.h"
 
-1585003181 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/NFA.cpp
+1585104156 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/NFA.cpp
 	"NFA.h"
 
-1585015014 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/NFA.h
-	"ReadInput.h"
+1585103564 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/NFA.h
+	"ReadRules.h"
 	"Graph.h"
 
 1585014780 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Node.cpp
@@ -118,4 +118,77 @@
 	"RegularDef.h"
 	<bits/stdc++.h>
 	<iostream>
+
+1585103820 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ReadRules.cpp
+	"ReadRules.h"
+	<fstream>
+	<sstream>
+
+1585103801 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ReadRules.h
+	<bits/stdc++.h>
+	"ExpNfa.h"
+
+1585104182 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ExpNfa.h
+	<bits/stdc++.h>
+	"Tokenizing.h"
+	"Graph.h"
+	"NFA.h"
+	"RegularDef.h"
+	"GeneralMethods.h"
+
+1585025555 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/Tokenizing.h
+	<bits/stdc++.h>
+	<string>
+	<vector>
+	<list>
+	<cstring>
+	<sstream>
+	<algorithm>
+	"GeneralMethods.h"
+
+1585104124 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ExpNfa.cpp
+	"ExpNfa.h"
+
+1585075062 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Tokenizing.cpp
+	"Tokenizing.h"
+
+1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/ExpNfa.cpp
+	"ExpNfa.h"
+
+1585169552 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/ExpNfa.h
+	<bits/stdc++.h>
+	"Tokenizing.h"
+	"Graph.h"
+	"NFA.h"
+	"RegularDef.h"
+	"GeneralMethods.h"
+
+1585070416 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Tokenizing.h
+	<bits/stdc++.h>
+	<string>
+	<vector>
+	<list>
+	<cstring>
+	<sstream>
+	<algorithm>
+	"GeneralMethods.h"
+
+1585169552 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/NFA.h
+	"ReadRules.h"
+	"Graph.h"
+
+1585169552 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/ReadRules.h
+	<bits/stdc++.h>
+	"ExpNfa.h"
+
+1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/NFA.cpp
+	"NFA.h"
+
+1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/ReadRules.cpp
+	"ReadRules.h"
+	<fstream>
+	<sstream>
+
+1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Tokenizing.cpp
+	"Tokenizing.h"
 

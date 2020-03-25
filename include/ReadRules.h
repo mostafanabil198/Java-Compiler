@@ -1,7 +1,9 @@
 #ifndef READRULES_H
 #define READRULES_H
-#include <bits/stdc++.h>
 using namespace std;
+#include <bits/stdc++.h>
+
+#include "ExpNfa.h"
 
 class ReadRules
 {
