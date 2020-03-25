@@ -8,7 +8,7 @@ class ReadRules
     private:
     string filename;
 public:
-    ReadRules(string filename);
+    ReadRules(string file_name);
     bool read_rules();
 };
 
