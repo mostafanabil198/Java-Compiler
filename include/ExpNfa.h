@@ -24,13 +24,13 @@ public:
     void insert_def(vector<Edge *> edges);
     Graph *recurse_build(vector<string> tokens, int* i);
     Graph *recurse_brackets(vector<string> *pVector, int *pInt);
-    Graph *create_graph(string basic_string, int *pInt);
+    Graph *create_char_graph(string basic_string, int *pInt);
     Graph *split_token(string basic_string, int *pInt, string h);
     Graph *create_graph(vector<string> *pVector, string basic_string, int *pInt, string h);
-    Graph *create_graph_from_defintition(Definition* def, int* i, string temp) ;
+    Graph *create_graph_from_defintition(RegularDef* def, int* i, string temp);
     Graph *get_cont(Graph *d_g, vector<string> *tokens, int *i);
     Graph *expanded_graph(string tokens, int *i);
-    string helper_value(vector<string> *pVector);
+    string check_operation(vector<string> *pVector);
     vector<string> expand_def(string def);
 
 

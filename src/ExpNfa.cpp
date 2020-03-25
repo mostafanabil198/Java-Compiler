@@ -102,7 +102,7 @@ Graph* ExpNfa::recurse_build(vector<string> tokens, int* node_id)
 bool ExpNfa::construct_nfa()
 {
     Graph* nfa_graph = new Graph();
-    RegularDef* eps = general_methods->get_def_symbols(EPS);
+    RegularDef* eps = general_methods->getDefinitions(EPS);
 
     Node* new_start = new Node(node_id);
     nfa_graph->set_start(new_start);
@@ -112,8 +112,8 @@ bool ExpNfa::construct_nfa()
         nfa_graph->mergeGraph(exp_graphs[i]->get_tansitions(), exp_graphs[i]->get_all_nodes());
         nfa_graph->addEdge(new_start, exp_graphs[i]->get_start_state(), eps);
     }
-    NFA* nfa = NFA::getInstance();
-    nfa->setAutomata(nfa_graph);
+    NFA* nfa = NFA::get_instance();
+    nfa->set_automata(nfa_graph);
     // testGraph(nfa); //-
     return true;
 }
@@ -181,7 +181,7 @@ Graph *ExpNfa::create_char_graph(string character, int *node_id)
     end_node->set_accepted_input(character);
 
     char_graph->addEdge(start_node, end_node, char_def);
-    char_graph->setStart(start_node);
+    char_graph->set_start(start_node);
     char_graph->set_accept_state(end_node);
 
     return char_graph;
@@ -259,14 +259,14 @@ Graph *ExpNfa::create_graph(vector<string> *tokens, string cur_token, int *node_
 
             if( cur_token.find("-") != string::npos && cur_token.length() == 4)
             {
-                return expandedGraph(cur_token, node_id);
+                return expanded_graph(cur_token, node_id);
             }
         }
         return create_char_graph(cur_token, node_id);
     }
     else if (cur_token.length() > 1)
     {
-        return splitToken(cur_token, node_id, operation);
+        return split_token(cur_token, node_id, operation);
     }
 }
 
@@ -302,11 +302,11 @@ Graph* ExpNfa::get_cont(Graph *d_g, vector<string> *tokens, int *node_id)
 
 
 
-void ExpNfa::constructKeyWords(vector<string> tokens)
+void ExpNfa::construct_keywords(vector<string> tokens)
 {
     while (!tokens.empty())
     {
-        Graph* d_g = splitToken(tokens.front(), &node_id, ".");
+        Graph* d_g = split_token(tokens.front(), &node_id, ".");
         d_g->get_accept_state()->set_accepted_input(tokens.front());
         d_g->get_accept_state()->set_priority(0);
         tokens.erase(tokens.begin());
@@ -316,7 +316,7 @@ void ExpNfa::constructKeyWords(vector<string> tokens)
 
 }
 
-void ExpNfa::constructPunct(vector<string> tokens)
+void ExpNfa::construct_punct(vector<string> tokens)
 {
     while (!tokens.empty())
     {
@@ -368,15 +368,15 @@ Graph *ExpNfa::expanded_graph(string token, int *node_id)
     Node* new_end = new Node((*node_id)++);
     new_end->set_accepted_input(token);
     result = new Graph();
-    result->setStart(new_start);
+    result->set_start(new_start);
     result->set_accept_state(new_end);
     for (int i = 0; i <sub_graphs.size() ; ++i)
     {
         cout<<"Graph #" << i << endl << "-----------------------" << endl;
-        result->mergeGraph(sub_graphs[i]->get_tansitions(), sub_graphs[j]->get_all_states());
-        result->addEdge(new_start, sub_graphs[j]->get_start_state(), general_methods->getDefinitions(EPS));
-        sub_graphs[j]->get_accept_state()->set_accepted_input(normal_state);
-        result->addEdge(sub_graphs[j]->get_accept_state(), new_end, general_methods->getDefinitions(EPS));
+        result->mergeGraph(sub_graphs[i]->get_tansitions(), sub_graphs[i]->get_all_nodes());
+        result->addEdge(new_start, sub_graphs[i]->get_start_state(), general_methods->getDefinitions(EPS));
+        sub_graphs[i]->get_accept_state()->set_accepted_input(normal_state);
+        result->addEdge(sub_graphs[i]->get_accept_state(), new_end, general_methods->getDefinitions(EPS));
     }
     return result;
 }
