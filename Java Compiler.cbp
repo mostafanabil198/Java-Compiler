@@ -35,6 +35,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Edge.h" />
+		<Unit filename="include/ExpNfa.h" />
 		<Unit filename="include/GeneralMethods.h" />
 		<Unit filename="include/Graph.h" />
 		<Unit filename="include/NFA.h" />
@@ -43,6 +44,7 @@
 		<Unit filename="include/Tokenizing.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Edge.cpp" />
+		<Unit filename="src/ExpNfa.cpp" />
 		<Unit filename="src/GeneralMethods.cpp" />
 		<Unit filename="src/Graph.cpp" />
 		<Unit filename="src/NFA.cpp" />
