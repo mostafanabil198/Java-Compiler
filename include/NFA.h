@@ -10,7 +10,7 @@ class NFA
     public:
         static NFA* get_instance();
         Graph* get_automata();
-        bool set_automata(Graph* graph);
+        void set_automata(Graph* graph);
         void read_input();
 
     protected:
