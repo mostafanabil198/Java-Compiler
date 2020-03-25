@@ -14,23 +14,23 @@ class GeneralMethods
     RegularDef* getDefinitions(string id);
     void insertInMap(string id, RegularDef* definition);
 
-    Graph* mergeGraphs(Graph* graph_1, Graph* graph_2h, string helper, int* id);
-    vector<string> get_helpers();
+    Graph* mergeGraphs(Graph* graph_a, Graph* graph_b, string def_symbol, int* id);
+    vector<string> get_def_symbols();
 
-    Graph *mergeOr(Graph *pGraph, Graph *graph_2, int* id);
+    Graph *mergeOr(Graph *graph_a, Graph *graph_b, int* id);
 
-    Graph *mergePlus(Graph *pGraph, int* id);
+    Graph *mergePlus(Graph *graph_a, int* id);
 
-    Graph *mergeAst(Graph *pGraph, int* id);
+    Graph *mergeAst(Graph *graph_a, int* id);
 
-    Graph *mergeCont(Graph *pGraph, Graph *graph_2, int* id);
+    Graph *mergeCont(Graph *graph_a, Graph *graph_b, int* id);
 
-    bool isAhelper(string s);
+    bool is_def_symbol(string s);
     private:
     map<string, RegularDef*> definitions;
-    vector<string> helpers;
+    vector<string> def_symbols;
     RegularDef *eps;
-     GeneralMethods();
+    GeneralMethods();
 };
 
 #endif // DEFTABLE_H

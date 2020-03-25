@@ -40,6 +40,10 @@
 		<Unit filename="include/NFA.h" />
 		<Unit filename="include/Node.h" />
 		<Unit filename="include/RegularDef.h" />
+<<<<<<< HEAD
+=======
+		<Unit filename="include/Tokenizing.h" />
+>>>>>>> 3f0fcd2c9bd0ee3391144b2113ce226f3bc2483f
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Edge.cpp" />
 		<Unit filename="src/GeneralMethods.cpp" />
@@ -47,6 +51,10 @@
 		<Unit filename="src/NFA.cpp" />
 		<Unit filename="src/Node.cpp" />
 		<Unit filename="src/RegularDef.cpp" />
+<<<<<<< HEAD
+=======
+		<Unit filename="src/Tokenizing.cpp" />
+>>>>>>> 3f0fcd2c9bd0ee3391144b2113ce226f3bc2483f
 		<Extensions>
 			<code_completion />
 			<debugger />
