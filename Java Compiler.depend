@@ -65,72 +65,66 @@
 	<bits/stdc++.h>
 	<iostream>
 
-1585002947 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Edge.cpp
+1585197865 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Edge.cpp
 	"Edge.h"
 
-1585014780 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/Edge.h
+1585198079 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/Edge.h
 	<string>
 	"Node.h"
 	"RegularDef.h"
 
-1585014780 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/Node.h
+1585197973 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/Node.h
 	<bits/stdc++.h>
 	"Edge.h"
 
-1585014780 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/RegularDef.h
-	"Graph.h"
-	"GeneralMethods.h"
+1585198119 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/RegularDef.h
 	<iostream>
 	<stack>
+	"Graph.h"
+	"GeneralMethods.h"
 
-1585014780 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/Graph.h
+1585197934 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/Graph.h
 	<bits/stdc++.h>
 	"Edge.h"
 	"Node.h"
 	"RegularDef.h"
 
-1585189939 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/GeneralMethods.h
+1585199463 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/GeneralMethods.h
 	<bits/stdc++.h>
+	<iostream>
 	"RegularDef.h"
 	"Graph.h"
 
-1585014780 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Graph.cpp
+1585197909 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Graph.cpp
 	"Graph.h"
-	<bits/stdc++.h>
-	"Node.h"
 
-1585196272 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/NFA.cpp
+1585196437 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/NFA.cpp
 	"NFA.h"
 
 1585103564 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/NFA.h
 	"ReadRules.h"
 	"Graph.h"
 
-1585014780 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Node.cpp
+1585197949 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Node.cpp
 	"Node.h"
-	"Edge.h"
-	<bits/stdc++.h>
 
-1585014780 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/RegularDef.cpp
+1585197490 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/RegularDef.cpp
 	"RegularDef.h"
 
-1585189981 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/GeneralMethods.cpp
+1585199483 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/GeneralMethods.cpp
 	"GeneralMethods.h"
-	"RegularDef.h"
 	"ExpNfa.h"
-	<bits/stdc++.h>
-	<iostream>
 
-1585103820 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ReadRules.cpp
+1585198024 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ReadRules.cpp
 	"ReadRules.h"
+
+1585198042 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ReadRules.h
+	<bits/stdc++.h>
 	<fstream>
 	<sstream>
-
-1585186170 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ReadRules.h
-	<bits/stdc++.h>
 	"ExpNfa.h"
 
-1585104182 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ExpNfa.h
+1585198800 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ExpNfa.h
 	<bits/stdc++.h>
 	"Tokenizing.h"
 	"Graph.h"
@@ -148,7 +142,7 @@
 	<algorithm>
 	"GeneralMethods.h"
 
-1585192855 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ExpNfa.cpp
+1585199111 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ExpNfa.cpp
 	"ExpNfa.h"
 
 1585075062 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Tokenizing.cpp
@@ -321,25 +315,25 @@
 1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Tokenizing.cpp
 	"Tokenizing.h"
 
-1585193267 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/DFA.cpp
-	<list>
-	<iostream>
-	<algorithm>
+1585197581 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/DFA.cpp
 	"DFA.h"
-	"NFA.h"
-	"GeneralMethods.h"
 
-1585186170 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/DFA.h
+1585199310 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/DFA.h
 	<vector>
 	<map>
 	<set>
+	<list>
+	<iostream>
+	<algorithm>
 	"RegularDef.h"
 	"Node.h"
+	"NFA.h"
+	"GeneralMethods.h"
 
-1585194829 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/DFA_minimization.cpp
+1585196984 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/DFA_minimization.cpp
 	"DFA_minimization.h"
 
-1585186170 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/DFA_minimization.h
+1585199282 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/DFA_minimization.h
 	<vector>
 	<map>
 	<set>
@@ -352,14 +346,13 @@
 	"Graph.h"
 	"GeneralMethods.h"
 
-1585195797 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ReadInput.cpp
+1585197982 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ReadInput.cpp
 	"ReadInput.h"
+
+1585198014 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ReadInput.h
+	<bits/stdc++.h>
 	<fstream>
 	<sstream>
-	<bits/stdc++.h>
-
-1585186170 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ReadInput.h
-	<bits/stdc++.h>
 	"RegularDef.h"
 	"Node.h"
 	"DFA_minimization.h"

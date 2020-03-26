@@ -3,6 +3,7 @@
 using namespace std;
 
 #include <string>
+
 #include "Node.h"
 #include "RegularDef.h"
 

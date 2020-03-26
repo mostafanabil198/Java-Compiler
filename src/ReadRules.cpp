@@ -1,6 +1,4 @@
 #include "ReadRules.h"
-#include <fstream>
-#include <sstream>
 
 ReadRules::ReadRules(string file_name)
 {

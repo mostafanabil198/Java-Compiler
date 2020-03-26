@@ -1,8 +1,6 @@
 #include "DFA_minimization.h"
-/* Null, because instance will be initialized on demand. */
 
 DFA_minimization* DFA_minimization::instance;
-//constructor
 DFA_minimization::DFA_minimization()
 {
     this->dfa = DFA::get_instance();
@@ -24,7 +22,7 @@ DFA_minimization* DFA_minimization::get_instance()
 
 //It divides the partition to 2 sets accepted set and non accepted set
 // and put them in the partitions sets
-void DFA_minimization:: set_first_partition(set<Node*> *Acc, set<Node*> *Not_Acc, vector<set<Node*>> *partitions){ //p0
+void DFA_minimization:: set_first_partition(set<Node*> *Acc, set<Node*> *Not_Acc, vector<set<Node*>> *partitions){
     vector<pair<Node*, map<RegularDef*,Node*>>> transitionStateTable = this->dfa->get_dfa();
     for (auto &ptr : transitionStateTable) {
         Node* temp = ptr.first;
@@ -47,7 +45,6 @@ void DFA_minimization::partitioning(DFA* dfa, vector<set<Node*>> *pre, vector<se
 
      this->partitioningHelper(dfa, pre,next);
      while (!(this->check_equal_partition(pre, next))) {
-      //  cout<<"size of next partition "<< next->size() <<endl;
         pre->clear();
          for (auto &ptr : *next) {
              pre->push_back(ptr);
@@ -58,11 +55,11 @@ void DFA_minimization::partitioning(DFA* dfa, vector<set<Node*>> *pre, vector<se
 }
 void DFA_minimization::partitioningHelper(DFA* dfa , vector<set<Node*>> *pre ,vector<set<Node*>> *next ){
     vector<set<Node*>> temp;
-    for(auto ptr = pre->begin(); ptr != pre->end(); ++ptr) { //loop on each set on the partition
+    for(auto ptr = pre->begin(); ptr != pre->end(); ++ptr) { // loop on each set on the partition
         this->distinguish_states(dfa,pre,&temp,*ptr);
     }
     next->clear();
-    for (auto &ptr : temp) { //add new sets to next
+    for (auto &ptr : temp) { // add new sets to next
         next->push_back(ptr);
     }
 
@@ -75,10 +72,8 @@ void DFA_minimization::distinguish_states(DFA* dfa,vector<set<Node*>>* P,vector<
     set<Node*> set2;
     for (auto B : curr) {
         if (!check_equivalent_states(dfa,P,A,B)) {
-          // cout<<" Not Eq "<<endl;
             set2.insert(B);
         }else {
-           // cout<<" Eq  "<<endl;
             set1.insert(B);
         }
     }
@@ -136,7 +131,7 @@ bool DFA_minimization::check_equivalent_states(DFA* dfa , vector<set<Node*>> *P,
 
 
 void DFA_minimization::printMinimizedDFA(){
-    cout << endl << "------this is Minimized DFA -----" << endl;
+    cout << endl << "------This is Minimized DFA -----" << endl;
     map<string,RegularDef*> DT = GeneralMethods::getInstance()->getTable();
     int counter = 0;
     cout << "Def  ";

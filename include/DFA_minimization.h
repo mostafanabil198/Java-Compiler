@@ -1,5 +1,6 @@
-#ifndef COMPILER_DFAMinimizer_H
-#define COMPILER_DFAMinimizer_H
+#ifndef DFA_MINIMIZATION_H
+#define DFA_MINIMIZATION_H
+using namespace std;
 
 #include <vector>
 #include <map>
@@ -7,11 +8,13 @@
 #include<iterator>
 #include <string.h>
 #include <iostream>
+
 #include "RegularDef.h"
 #include "Node.h"
 #include "DFA.h"
 #include "Graph.h"
 #include "GeneralMethods.h"
+
 class DFA_minimization {
 private:
     /* Here will be the instance stored. */

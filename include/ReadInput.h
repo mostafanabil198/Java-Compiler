@@ -1,6 +1,11 @@
 #ifndef READINPUT_H
 #define READINPUT_H
+using namespace std;
+
 #include <bits/stdc++.h>
+#include <fstream>
+#include <sstream>
+
 #include "RegularDef.h"
 #include "Node.h"
 #include "DFA_minimization.h"

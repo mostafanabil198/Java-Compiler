@@ -1,7 +1,10 @@
 #ifndef READRULES_H
 #define READRULES_H
 using namespace std;
+
 #include <bits/stdc++.h>
+#include <fstream>
+#include <sstream>
 
 #include "ExpNfa.h"
 

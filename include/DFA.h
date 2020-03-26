@@ -1,12 +1,19 @@
-#ifndef COMPILER_DFA_H
-#define COMPILER_DFA_H
+#ifndef DFA_H
+#define DFA_H
+using namespace std;
+
 #include <vector>
 #include <map>
 #include <set>
+#include <list>
+#include <iostream>
+#include <algorithm>
+
 #include "RegularDef.h"
 #include "Node.h"
+#include "NFA.h"
+#include "GeneralMethods.h"
 
-using namespace std;
 
 class DFA {
 private:

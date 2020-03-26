@@ -1,8 +1,5 @@
 #include "GeneralMethods.h"
-#include "RegularDef.h"
 #include "ExpNfa.h"
-#include <bits/stdc++.h>
-#include <iostream>
 
 static GeneralMethods* instance;
 

@@ -1,10 +1,13 @@
-#ifndef DEFTABLE_H
-#define DEFTABLE_H
+#ifndef GENERALMETHODS_H
+#define GENERALMETHODS_H
+using namespace std;
+
 #include <bits/stdc++.h>
+#include <iostream>
+
 #include "RegularDef.h"
 #include "Graph.h"
 
-using namespace std;
 class RegularDef;
 class Graph;
 class GeneralMethods

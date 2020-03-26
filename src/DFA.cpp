@@ -1,10 +1,4 @@
-#include <list>
-#include <iostream>
-#include <algorithm>
 #include "DFA.h"
-#include "NFA.h"
-#include "GeneralMethods.h"
-
 
 DFA* DFA::instance;
 
@@ -73,7 +67,7 @@ Node* DFA::get_highest_priority(set<Node*> set) {
 }
 
 void DFA::testDFA() {
-    cout << endl << "------this is DFA TEST' -----" << endl;
+    cout << endl << "------ DFA table' -----" << endl;
     for (vector<pair <Node*,  map<RegularDef*,Node*>>>::iterator it = transition_table.begin() ; it != transition_table.end(); ++it) {
         map<RegularDef*, Node*> map = (*it).second;
         cout<<(*it).first->get_id()<<(*it).first->get_accepted_input()<<" ";
@@ -195,8 +189,8 @@ DFA::DFA() {
             }
         }
     }
-    //TODO set memory free for all data structures unused
-    testDFA();
+    //testDFA();
+
 }
 
 //get the end states for the certain state and certain def

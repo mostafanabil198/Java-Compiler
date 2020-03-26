@@ -1,14 +1,11 @@
 #include "ReadInput.h"
-#include <fstream>
-#include <sstream>
-#include <bits/stdc++.h>
 
 ReadInput::ReadInput(string filename)
 {
     this->file=filename;
     this->minimized_dfa = DFA_minimization::get_instance();
     this->transition_table = minimized_dfa->get_min_dfa();
-    cout << endl << "------------------ReadInput----------------- " << endl;
+    cout << endl << "------------------Reading The Prog----------------- " << endl;
     read_input_from_file();
 }
 
@@ -17,7 +14,7 @@ vector <string> ReadInput::get_line_tokens(string line) {
     stringstream ssin(line);
     string token;
     while(ssin >> token) {
-        cout << endl << "------ Token:  " << token << endl;
+        cout << endl << "Read Token:  " << token << endl;
         tokens.push_back(token);
     }
     return tokens;
