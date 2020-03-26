@@ -73,6 +73,7 @@ Node* DFA::get_highest_priority(set<Node*> set) {
 }
 
 void DFA::testDFA() {
+    cout << endl << "------this is DFA TEST' -----" << endl;
     for (vector<pair <Node*,  map<RegularDef*,Node*>>>::iterator it = transition_table.begin() ; it != transition_table.end(); ++it) {
         map<RegularDef*, Node*> map = (*it).second;
         cout<<(*it).first->get_id()<<(*it).first->get_accepted_input()<<" ";

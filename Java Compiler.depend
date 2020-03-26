@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1584987254 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/main.cpp
+1585196181 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/main.cpp
 	<iostream>
+	"ReadInput.h"
 
 1584994126 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/main.cpp
 	<iostream>
@@ -88,7 +89,7 @@
 	"Node.h"
 	"RegularDef.h"
 
-1585019746 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/GeneralMethods.h
+1585189939 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/GeneralMethods.h
 	<bits/stdc++.h>
 	"RegularDef.h"
 	"Graph.h"
@@ -98,7 +99,7 @@
 	<bits/stdc++.h>
 	"Node.h"
 
-1585104156 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/NFA.cpp
+1585196272 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/NFA.cpp
 	"NFA.h"
 
 1585103564 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/NFA.h
@@ -113,9 +114,10 @@
 1585014780 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/RegularDef.cpp
 	"RegularDef.h"
 
-1585019724 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/GeneralMethods.cpp
+1585189981 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/GeneralMethods.cpp
 	"GeneralMethods.h"
 	"RegularDef.h"
+	"ExpNfa.h"
 	<bits/stdc++.h>
 	<iostream>
 
@@ -124,7 +126,7 @@
 	<fstream>
 	<sstream>
 
-1585103801 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ReadRules.h
+1585186170 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ReadRules.h
 	<bits/stdc++.h>
 	"ExpNfa.h"
 
@@ -146,13 +148,14 @@
 	<algorithm>
 	"GeneralMethods.h"
 
-1585104124 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ExpNfa.cpp
+1585192855 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ExpNfa.cpp
 	"ExpNfa.h"
 
 1585075062 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Tokenizing.cpp
 	"Tokenizing.h"
 
-<<<<<<< HEAD
+1585169552 D
+
 1585075996 source:/home/nashar/Desktop/c projects/Java-Compiler/main.cpp
 	<iostream>
 
@@ -208,24 +211,19 @@
 	"ExpNfa.h"
 
 1585169262 /home/nashar/Desktop/c projects/Java-Compiler/include/ExpNfa.h
-=======
+
 1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/ExpNfa.cpp
 	"ExpNfa.h"
 
 1585169552 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/ExpNfa.h
->>>>>>> 5ad9bb36ce91061414159919bf022bee6c6f03a4
+
+1585169552 9bb36ce91061414159919bf022bee6c6f03a4
 	<bits/stdc++.h>
 	"Tokenizing.h"
 	"Graph.h"
 	"NFA.h"
 	"RegularDef.h"
 	"GeneralMethods.h"
-
-<<<<<<< HEAD
-1585075996 /home/nashar/Desktop/c projects/Java-Compiler/include/Tokenizing.h
-=======
-1585070416 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Tokenizing.h
->>>>>>> 5ad9bb36ce91061414159919bf022bee6c6f03a4
 	<bits/stdc++.h>
 	<string>
 	<vector>
@@ -234,8 +232,14 @@
 	<sstream>
 	<algorithm>
 	"GeneralMethods.h"
+	"ReadRules.h"
+	<fstream>
+	<sstream>
 
-<<<<<<< HEAD
+1585075996 /home/nashar/Desktop/c projects/Java-Compiler/include/Tokenizing.h
+
+1585070416 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Tokenizing.h
+
 1585075996 source:/home/nashar/Desktop/c projects/Java-Compiler/src/Node.cpp
 	"Node.h"
 	"Edge.h"
@@ -279,7 +283,7 @@
 	"GeneralMethods.h"
 
 1585169262 source:/home/nashar/Desktop/c projects/Java-Compiler/src/ReadRules.cpp
-=======
+
 1585169552 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/NFA.h
 	"ReadRules.h"
 	"Graph.h"
@@ -292,12 +296,7 @@
 	"NFA.h"
 
 1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/ReadRules.cpp
->>>>>>> 5ad9bb36ce91061414159919bf022bee6c6f03a4
-	"ReadRules.h"
-	<fstream>
-	<sstream>
 
-<<<<<<< HEAD
 1585169262 source:/home/nashar/Desktop/c projects/Java-Compiler/src/ExpNfa.cpp
 	"ExpNfa.h"
 
@@ -316,8 +315,52 @@
 	"DFA.h"
 	"Graph.h"
 	"GeneralMethods.h"
-=======
+
+1585179374 thods.h"
+
 1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Tokenizing.cpp
 	"Tokenizing.h"
->>>>>>> 5ad9bb36ce91061414159919bf022bee6c6f03a4
+
+1585193267 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/DFA.cpp
+	<list>
+	<iostream>
+	<algorithm>
+	"DFA.h"
+	"NFA.h"
+	"GeneralMethods.h"
+
+1585186170 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/DFA.h
+	<vector>
+	<map>
+	<set>
+	"RegularDef.h"
+	"Node.h"
+
+1585194829 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/DFA_minimization.cpp
+	"DFA_minimization.h"
+
+1585186170 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/DFA_minimization.h
+	<vector>
+	<map>
+	<set>
+	<iterator>
+	<string.h>
+	<iostream>
+	"RegularDef.h"
+	"Node.h"
+	"DFA.h"
+	"Graph.h"
+	"GeneralMethods.h"
+
+1585195797 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ReadInput.cpp
+	"ReadInput.h"
+	<fstream>
+	<sstream>
+	<bits/stdc++.h>
+
+1585186170 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ReadInput.h
+	<bits/stdc++.h>
+	"RegularDef.h"
+	"Node.h"
+	"DFA_minimization.h"
 

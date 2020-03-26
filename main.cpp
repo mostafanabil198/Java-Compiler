@@ -1,9 +1,10 @@
 #include <iostream>
 
+#include "ReadInput.h"
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    ReadInput *r = new ReadInput("Test/program.txt");
     return 0;
 }

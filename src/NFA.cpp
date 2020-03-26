@@ -22,6 +22,6 @@ void NFA::set_automata(Graph *graph) {
 
 
 void NFA::read_input() {
-    ReadRules *t = new ReadRules(""); //-
+    ReadRules *t = new ReadRules("Test/input.txt");
     t->read_rules();
 }

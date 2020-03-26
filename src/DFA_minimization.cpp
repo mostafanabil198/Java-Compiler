@@ -136,6 +136,7 @@ bool DFA_minimization::check_equivalent_states(DFA* dfa , vector<set<Node*>> *P,
 
 
 void DFA_minimization::printMinimizedDFA(){
+    cout << endl << "------this is Minimized DFA -----" << endl;
     map<string,RegularDef*> DT = GeneralMethods::getInstance()->getTable();
     int counter = 0;
     cout << "Def  ";

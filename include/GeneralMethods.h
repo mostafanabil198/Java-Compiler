@@ -3,6 +3,7 @@
 #include <bits/stdc++.h>
 #include "RegularDef.h"
 #include "Graph.h"
+
 using namespace std;
 class RegularDef;
 class Graph;
@@ -24,6 +25,7 @@ class GeneralMethods
     Graph *mergeAst(Graph *graph_a, int* id);
 
     Graph *mergeCont(Graph *graph_a, Graph *graph_b, int* id);
+    void test_Definitions();
 
     bool is_def_symbol(string s);
     private:

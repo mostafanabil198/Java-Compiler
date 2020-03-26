@@ -26,6 +26,7 @@ bool ExpNfa::construct_automata(string line)
         tokens.erase(tokens.begin());
         tokens.erase(tokens.begin());
         Graph *exp_graph = recurse_build(tokens, &node_id);
+        test_graph(exp_graph);
         node_id = exp_graph->get_accept_state()->get_id()+1;
         exp_graph->get_accept_state()->set_accepted_input(exp_name);
         exp_graph->get_accept_state()->set_priority(priority++);
@@ -114,7 +115,8 @@ bool ExpNfa::construct_nfa()
     }
     NFA* nfa = NFA::get_instance();
     nfa->set_automata(nfa_graph);
-    // testGraph(nfa); //-
+    cout << endl << "Last NFA " << endl;
+    test_graph(nfa_graph); //-
     return true;
 }
 
@@ -379,4 +381,26 @@ Graph *ExpNfa::expanded_graph(string token, int *node_id)
         result->addEdge(sub_graphs[i]->get_accept_state(), new_end, general_methods->getDefinitions(EPS));
     }
     return result;
+}
+
+
+void ExpNfa::test_graph(Graph *g) {
+    vector<Node*> states = g->get_all_nodes();
+    vector<Edge*> edges = g->get_tansitions();
+    Node* start = g->get_start_state();
+
+    cout << "States : "<<endl;
+    for (int i = 0; i < states.size(); ++i) {
+        cout<<"States# " <<states[i]->get_id() << " status " << states[i]->get_accepted_input() <<endl;
+        if(states[i]->get_accepted_input() != normal_state)
+            cout << "Accept state : " << states[i]->get_id() << " status " << states[i]->get_accepted_input() << " with Priority "<< states[i]->get_priority() <<endl;
+
+    }
+    cout << "start state : " << start->get_id() << " status " << start->get_accepted_input() <<endl;
+    cout << "Egdes : "<<endl;
+
+    for (int j = 0; j < edges.size(); ++j) {
+
+        cout << "Edge Weight type " << edges[j]->get_weight()->get_regular_def()->get_accept_state()->get_accepted_input() << " from" << edges[j]->get_src()->get_id() << " to " << edges[j]->get_dest()->get_id() << endl;
+    }
 }
