@@ -9,7 +9,7 @@ using namespace std;
 #include "Graph.h"
 
 class RegularDef;
-class Graph;
+class Graph; 
 class GeneralMethods
 {
     public:
@@ -38,4 +38,4 @@ class GeneralMethods
     GeneralMethods();
 };
 
-#endif // DEFTABLE_H
+#endif // GENERALMETHODS_H

@@ -20,7 +20,7 @@ private:
     /* Here will be the instance stored. */
     static DFA_minimization* instance;
     /* Private constructor to prevent instancing. */
-    DFA_minimization();
+    DFA_minimization(string rules_file);
 
     vector<pair<Node*, map<RegularDef*, Node*>>> minimizedTransitionStateTable;
     DFA* dfa;
@@ -44,7 +44,7 @@ public:
 
     void set_start_state(Node *startState);
     /* Static access method. */
-    static DFA_minimization* get_instance();
+    static DFA_minimization* get_instance(string rules_file);
     vector<pair<Node*,map<RegularDef*,Node*>>> *get_min_dfa();
     void printMinimizedDFA();
 

@@ -20,7 +20,7 @@ bool ExpNfa::construct_automata(string line)
 
         return true;
     }
-    if(tokens[1] == ":") // case expression
+    if(tokens[1] == ":") // case expression 
     {
         string exp_name = tokens[0];
         tokens.erase(tokens.begin());

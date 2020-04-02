@@ -138,7 +138,7 @@ Graph *GeneralMethods::mergeCont(Graph *graph_a, Graph *graph_b, int* i) {
         return graph_b;
 
 
-    //the end state of graph_a will be the start state of graph_b by add an edge between them its weight is eps and set it as N_ACC
+    // The end state of graph_a will be the start state of graph_b by add an edge between them its weight is eps and set it as N_ACC
     Node* start_first = graph_a->get_start_state();
     Node* start_second = graph_b->get_start_state();
     Node* end_first = graph_a->get_accept_state();

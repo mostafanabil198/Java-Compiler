@@ -20,7 +20,6 @@ class RegularDef
 
     private:
         Graph *regular_def;
-
 };
 
-#endif // REGULAR_DEF_H
+#endif // REGULARDEF_H

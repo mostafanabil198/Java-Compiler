@@ -2,9 +2,9 @@
 
 DFA* DFA::instance;
 
-DFA* DFA::get_instance() {
+DFA* DFA::get_instance(string rules_file) {
     if (instance == NULL) {
-        instance = new DFA();
+        instance = new DFA(rules_file);
     }
     return instance;
 }
@@ -91,9 +91,9 @@ int DFA::table_with_same_state(set<Node *> state) {
     return 0;
 }
 
-DFA::DFA() {
+DFA::DFA(string rules_file) {
     NFA* nfa = NFA::get_instance();
-    nfa->read_input();
+    nfa->read_input(rules_file);
 
     //get the final NFA graph
     Graph* graph = nfa->get_automata();

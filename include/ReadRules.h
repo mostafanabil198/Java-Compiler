@@ -4,7 +4,7 @@ using namespace std;
 
 #include <bits/stdc++.h>
 #include <fstream>
-#include <sstream>
+#include <sstream> 
 
 #include "ExpNfa.h"
 

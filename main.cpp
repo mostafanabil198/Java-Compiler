@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
-    ReadInput *r = new ReadInput("Test/program.txt");
+    // params --> program, rules file, output file
+    ReadInput *r = new ReadInput("Test/program.txt","Test/rules.txt" ,"tokens.txt");
     return 0;
 }

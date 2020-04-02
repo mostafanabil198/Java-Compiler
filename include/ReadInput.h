@@ -13,10 +13,10 @@ using namespace std;
 class ReadInput
 {
 public:
-    ReadInput(string filename);
-    void read_input_from_file();
+    ReadInput(string program_file, string rules_file, string output_file);
+    void read_input_from_file(string output_file);
     Node* get_next_state(Node* next_state, char input);
-    void Output();
+    void Output(string output_file);
     vector<string> get_tokens();
     private:
     string file;

@@ -21,5 +21,4 @@ bool ReadRules::read_rules() {
         return false;
     }
 
-
 }

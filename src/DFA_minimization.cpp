@@ -1,20 +1,20 @@
 #include "DFA_minimization.h"
 
 DFA_minimization* DFA_minimization::instance;
-DFA_minimization::DFA_minimization()
+DFA_minimization::DFA_minimization(string rules_file)
 {
-    this->dfa = DFA::get_instance();
+    this->dfa = DFA::get_instance(rules_file);
     this->set_first_partition(&this->Accepted,&this->NotAccepted,&this->previousPartition);
     this->partitioning(this->dfa, &this->previousPartition, &this->nextPartition);
     this->build_min_dfa(this->dfa,&this->minimizedTransitionStateTable, &this->previousPartition);
     this->printMinimizedDFA();
 }
 
-DFA_minimization* DFA_minimization::get_instance()
+DFA_minimization* DFA_minimization::get_instance(string rules_file)
 {
     if (instance == nullptr)
     {
-        instance = new DFA_minimization();
+        instance = new DFA_minimization(rules_file);
     }
     return instance;
 }

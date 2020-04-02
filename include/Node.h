@@ -24,9 +24,9 @@ class Node
 
     private:
     int id;
+    string accepted_input;
     vector< Edge* > entering_Edges;
     vector<Edge*> leaving_Edges;
-    string accepted_input;
     int priority;
 };
 

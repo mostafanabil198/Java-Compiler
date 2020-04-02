@@ -57,7 +57,6 @@ Node* RegularDef::dfs(Node* start, int states_number, string input) {
             }
         }
     }
-
     return NULL;
 }
 

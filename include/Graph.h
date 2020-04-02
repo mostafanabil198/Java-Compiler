@@ -6,7 +6,7 @@ using namespace std;
 
 #include "Edge.h"
 #include "Node.h"
-#include "RegularDef.h"
+#include "RegularDef.h" 
 
 class RegularDef;
 class Node;

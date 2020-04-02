@@ -1,12 +1,12 @@
 #include "ReadInput.h"
 
-ReadInput::ReadInput(string filename)
+ReadInput::ReadInput(string program_file, string rules_file, string output_file )
 {
-    this->file=filename;
-    this->minimized_dfa = DFA_minimization::get_instance();
+    this->file=program_file;
+    this->minimized_dfa = DFA_minimization::get_instance(rules_file);
     this->transition_table = minimized_dfa->get_min_dfa();
     cout << endl << "------------------Reading The Prog----------------- " << endl;
-    read_input_from_file();
+    read_input_from_file(output_file);
 }
 
 vector <string> ReadInput::get_line_tokens(string line) {
@@ -20,9 +20,9 @@ vector <string> ReadInput::get_line_tokens(string line) {
     return tokens;
 }
 
-void ReadInput::Output() {
+void ReadInput::Output(string output_file) {
     ofstream outfile;
-    outfile.open("tokens.txt");
+    outfile.open(output_file);
     for (int i = 0; i < this->tokens.size(); i++) {
         if(tokens[i].at(0) == '\\' && tokens[i].size() > 1){
             tokens[i] = tokens[i].at(1);
@@ -54,7 +54,7 @@ vector<string> ReadInput::get_tokens() {
     return this->tokens;
 }
 
-void ReadInput::read_input_from_file() {
+void ReadInput::read_input_from_file(string output_file) {
     ifstream infile(this->file);
     string line;
     vector <string> line_tokens;
@@ -116,5 +116,5 @@ void ReadInput::read_input_from_file() {
            // tokens.push_back("$");
         }
     }
-    Output();
+    Output(output_file);
 }
