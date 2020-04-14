@@ -38,26 +38,32 @@
 		<Unit filename="include/DFA_minimization.h" />
 		<Unit filename="include/Edge.h" />
 		<Unit filename="include/ExpNfa.h" />
+		<Unit filename="include/FollowGenerator.h" />
 		<Unit filename="include/GeneralMethods.h" />
 		<Unit filename="include/Graph.h" />
 		<Unit filename="include/NFA.h" />
 		<Unit filename="include/Node.h" />
+		<Unit filename="include/Parser.h" />
 		<Unit filename="include/ReadInput.h" />
 		<Unit filename="include/ReadRules.h" />
 		<Unit filename="include/RegularDef.h" />
+		<Unit filename="include/StartGenerator.h" />
 		<Unit filename="include/Tokenizing.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/DFA.cpp" />
 		<Unit filename="src/DFA_minimization.cpp" />
 		<Unit filename="src/Edge.cpp" />
 		<Unit filename="src/ExpNfa.cpp" />
+		<Unit filename="src/FollowGenerator.cpp" />
 		<Unit filename="src/GeneralMethods.cpp" />
 		<Unit filename="src/Graph.cpp" />
 		<Unit filename="src/NFA.cpp" />
 		<Unit filename="src/Node.cpp" />
+		<Unit filename="src/Parser.cpp" />
 		<Unit filename="src/ReadInput.cpp" />
 		<Unit filename="src/ReadRules.cpp" />
 		<Unit filename="src/RegularDef.cpp" />
+		<Unit filename="src/StartGenerator.cpp" />
 		<Unit filename="src/Tokenizing.cpp" />
 		<Extensions>
 			<code_completion />

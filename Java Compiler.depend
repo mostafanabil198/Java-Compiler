@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1585847575 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/main.cpp
+1585848185 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/main.cpp
 	<iostream>
 	"ReadInput.h"
 
@@ -346,14 +346,31 @@
 	"Graph.h"
 	"GeneralMethods.h"
 
-1585847548 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ReadInput.cpp
+1585848208 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/ReadInput.cpp
 	"ReadInput.h"
 
-1585847606 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ReadInput.h
+1585848231 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/ReadInput.h
 	<bits/stdc++.h>
 	<fstream>
 	<sstream>
 	"RegularDef.h"
 	"Node.h"
 	"DFA_minimization.h"
+
+1586894469 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/FollowGenerator.cpp
+	"parser/FollowGenerator.h"
+
+1586893640 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/FollowGenerator.h
+
+1586894542 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/Parser.cpp
+	"parser/Parser.h"
+
+1586894661 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/Parser.h
+	<bits/stdc++.h>
+	<iostream>
+
+1586894467 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/StartGenerator.cpp
+	"parser/StartGenerator.h"
+
+1586893615 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/StartGenerator.h
 
