@@ -14,3 +14,49 @@ ParserTable* ParserTable::getInstance()
     }
     return instance;
 }
+
+
+vector<vector<string>> ParserTable::get_production(string key){
+    vector<vector<string>> x;
+    return x;
+}
+void ParserTable::add_production(string key, vector<string>){
+
+}
+// Start table
+vector<pair<string, vector<string>>> ParserTable::get_start(string key){
+    vector<pair<string, vector<string>>> x;
+    return x;
+}
+void ParserTable::add_start(string key, pair<string, vector<string>>){
+}
+// Follow table
+vector<string> ParserTable::get_follow(string key){
+    vector<string> x;
+    return x;
+}
+void ParserTable::add_follow(string key, string follow){
+
+}
+
+bool ParserTable::has_epsilon(string key){
+    return false;
+}
+vector<string> ParserTable::get_terminals(){
+    vector<string> x;
+    return x;
+}
+void ParserTable::generate_parser_table(){
+
+}
+
+void ParserTable::add_terminal(string terminal){
+}
+
+vector<pair<string, pair<int, int>>> ParserTable::get_non_terminal_indexing(string non_terminal){
+    vector<pair<string, pair<int, int>>> x;
+    return x;
+}
+void ParserTable::add_non_terminal_index(string non_terminal, pair<string, pair<int, int>> index){
+
+}

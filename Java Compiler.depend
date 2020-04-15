@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1585848185 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/main.cpp
+1586974744 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/main.cpp
 	<iostream>
 	"ReadInput.h"
 
@@ -364,15 +364,16 @@
 	<bits/stdc++.h>
 	<iostream>
 
-1586970994 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/Parser.cpp
+1586974695 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/Parser.cpp
 	"parser/Parser.h"
 
-1586970969 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/Parser.h
+1586973869 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/Parser.h
 	<bits/stdc++.h>
 	<iostream>
 	"StartGenerator.h"
 	"FollowGenerator.h"
 	"ParserOutput.h"
+	"ParserTable.h"
 
 1586894467 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/StartGenerator.cpp
 	"parser/StartGenerator.h"
@@ -381,10 +382,10 @@
 	<bits/stdc++.h>
 	<iostream>
 
-1586894858 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/ParserTable.cpp
+1586975776 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/ParserTable.cpp
 	"ParserTable.h"
 
-1586904064 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/ParserTable.h
+1586975348 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/ParserTable.h
 	<bits/stdc++.h>
 	<iostream>
 

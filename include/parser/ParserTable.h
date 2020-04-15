@@ -21,8 +21,11 @@ class ParserTable
 
         bool has_epsilon(string key);
         vector<string> get_terminals();
+        void add_terminal(string terminal);
         void generate_parser_table();
 
+        vector<pair<string, pair<int, int>>> get_non_terminal_indexing(string non_terminal);
+        void add_non_terminal_index(string non_terminal, pair<string, pair<int, int>> index);
 
     protected:
 
