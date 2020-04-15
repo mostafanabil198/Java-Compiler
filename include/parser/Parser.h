@@ -21,7 +21,7 @@ class Parser
         FollowGenerator follow_generator;
         ParserOutput parser_output;
         void read_rules(string CFG_file);
-
+        void remove_spaces(string *str)
 };
 
 #endif // PARSER_H

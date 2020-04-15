@@ -1,7 +1,10 @@
 #ifndef PARSEROUTPUT_H
 #define PARSEROUTPUT_H
 
+#include <bits/stdc++.h>
+#include <iostream>
 
+using namespace std;
 class ParserOutput
 {
     public:
