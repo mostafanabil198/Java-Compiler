@@ -6,7 +6,6 @@ ParserTable::ParserTable()
 
 }
 
-
 ParserTable* ParserTable::getInstance()
 {
     if(instance == NULL) {
@@ -59,4 +58,16 @@ vector<pair<string, pair<int, int>>> ParserTable::get_non_terminal_indexing(stri
 }
 void ParserTable::add_non_terminal_index(string non_terminal, pair<string, pair<int, int>> index){
 
+}
+
+void ParserTable::add_has_eps(string key) {
+
+}
+
+void ParserTable::set_first_non_terminal(string non_terminal){
+}
+
+string ParserTable::get_first_non_terminal(){
+    string x;
+    return x;
 }

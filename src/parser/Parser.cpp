@@ -83,6 +83,8 @@ vector<string> Parser::get_rule_elems(string lhs_non_terminal, int rule_index, s
         if(elem[0] == '\'' && elem[elem.size()-1] == '\''){
             elem = elem.substr(1, elem.size() - 2);
             ParserTable::getInstance()->add_terminal(elem);
+        } else if (elem == EPSILON) {
+            ParserTable::getInstance()->add_has_eps(lhs_non_terminal);
         } else {
             add_non_terminal_index(elem, lhs_non_terminal, rule_index, i);
         }

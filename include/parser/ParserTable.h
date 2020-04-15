@@ -4,6 +4,8 @@
 #include <bits/stdc++.h>
 #include <iostream>
 
+#define EPSILON "\\L"
+
 using namespace std;
 class ParserTable
 {
@@ -18,14 +20,19 @@ class ParserTable
         // Follow table
         vector<string> get_follow(string key);
         void add_follow(string key, string follow);
-
+        // Has Epsilon set
         bool has_epsilon(string key);
+        void add_has_eps(string key);
+
         vector<string> get_terminals();
         void add_terminal(string terminal);
         void generate_parser_table();
 
         vector<pair<string, pair<int, int>>> get_non_terminal_indexing(string non_terminal);
         void add_non_terminal_index(string non_terminal, pair<string, pair<int, int>> index);
+
+        void set_first_non_terminal(string non_terminal);
+        string get_first_non_terminal();
 
     protected:
 
@@ -47,6 +54,7 @@ class ParserTable
 
         unordered_set<string> has_eps;
         vector<string> terminals;
+        string first_non_terminal;
 
 };
 
