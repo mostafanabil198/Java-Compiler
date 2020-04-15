@@ -16,11 +16,11 @@ ParserTable* ParserTable::getInstance()
 
 
 vector<vector<string>> ParserTable::get_production(string key){
-    vector<vector<string>> x;
-    return x;
+    return productions[key];
 }
-void ParserTable::add_production(string key, vector<string>){
 
+void ParserTable::add_production(string key, vector<string> production){
+    productions[key].push_back()
 }
 // Start table
 vector<pair<string, vector<string>>> ParserTable::get_start(string key){

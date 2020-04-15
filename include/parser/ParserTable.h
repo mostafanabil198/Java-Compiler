@@ -13,10 +13,10 @@ class ParserTable
         static ParserTable* getInstance();
         // Productions table
         vector<vector<string>> get_production(string key);
-        void add_production(string key, vector<string>);
+        void add_production(string key, vector<string> production);
         // Start table
         vector<pair<string, vector<string>>> get_start(string key);
-        void add_start(string key, pair<string, vector<string>>);
+        void add_start(string key, pair<string, vector<string>> start);
         // Follow table
         vector<string> get_follow(string key);
         void add_follow(string key, string follow);
