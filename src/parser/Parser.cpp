@@ -3,6 +3,10 @@
 Parser::Parser(string CFG_file)
 {
     read_rules(CFG_file);
+    ParserTable::getInstance()->print_productions();
+    ParserTable::getInstance()->print_non_terminal_indexing();
+    ParserTable::getInstance()->print_has_eps();
+    ParserTable::getInstance()->print_terminals();
 }
 
 
@@ -30,14 +34,14 @@ void Parser::read_rules(string CFG_file)
             if(line[0] == '#')   // new production
             {
                 line = line.substr(1, line.size() - 1);
-                vector<string> production_elems = split(line, '=');
+                vector<string> production_elems = split2(line, " = ");
                 lhs_non_terminal = remove_spaces(production_elems[0]);
                 rule_index = 0;
-                production_rules = split(production_elems[1], '|');
+                production_rules = split2(production_elems[1], "| ");
             }
             else
             {
-                production_rules = split(line, '|');
+                production_rules = split2(line, "| ");
             }
             for(int i = 0; i < production_rules.size(); i++)
             {
@@ -56,20 +60,6 @@ string Parser::remove_spaces(string str)
 {
     str.erase(remove(str.begin(), str.end(), ' '), str.end());
     return str;
-}
-
-vector<string> Parser::split(string line, char del)
-{
-    std::istringstream line_stream(line);
-    std::string word;
-    vector<string> words;
-    // get word by word separated by a del
-    while(std::getline(line_stream, word, del))
-    {
-        if(word != "" && word != " ")
-            words.push_back(word);
-    }
-    return words;
 }
 
 vector<string> Parser::get_rule_elems(string lhs_non_terminal, int rule_index, string line)
@@ -98,4 +88,30 @@ void Parser::add_non_terminal_index(string elem, string lhs_non_terminal, int ru
     pair<string, pair<int, int>> index;
     index = make_pair(lhs_non_terminal, make_pair(rule_index, i));
     ParserTable::getInstance()->add_non_terminal_index(elem, index);
+}
+
+vector<string> Parser::split2(string line, string del){
+    vector<string> words;
+    size_t pos = 0;
+    string word;
+    while ((pos = line.find(del)) != string::npos) {
+        word = line.substr(0, pos);
+        if(word != "" && word != " ") words.push_back(word);
+        line.erase(0, pos + del.length());
+    }
+    if(line != "" && line != " ") words.push_back(line);
+    return words;
+}
+
+vector<string> Parser::split(string line, char del)
+{
+    std::istringstream line_stream(line);
+    std::string word;
+    vector<string> words;
+    // get word by word separated by a del
+    while(std::getline(line_stream, word, del))
+    {
+        if(word != "" && word != " ") words.push_back(word);
+    }
+    return words;
 }

@@ -24,7 +24,7 @@ class ParserTable
         bool has_epsilon(string key);
         void add_has_eps(string key);
 
-        vector<string> get_terminals();
+        unordered_set<string> get_terminals();
         void add_terminal(string terminal);
         void generate_parser_table();
 
@@ -33,6 +33,14 @@ class ParserTable
 
         void set_first_non_terminal(string non_terminal);
         string get_first_non_terminal();
+
+        void print_productions();
+        void print_parsing_table();
+        void print_starts();
+        void print_follows();
+        void print_non_terminal_indexing();
+        void print_has_eps();
+        void print_terminals();
 
     protected:
 
@@ -53,7 +61,7 @@ class ParserTable
         unordered_map<string, vector<pair<string, pair<int, int>>>> non_terminal_indexing;
 
         unordered_set<string> has_eps;
-        vector<string> terminals;
+        unordered_set<string> terminals;
         string first_non_terminal;
 
 };

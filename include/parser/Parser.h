@@ -24,6 +24,7 @@ class Parser
         void read_rules(string CFG_file);
         string remove_spaces(string str);
         vector<string> split(string line, char del);
+        vector<string> split2(string line, string del);
         vector<string> get_rule_elems(string lhs_non_terminal, int rule_index, string line);
         void add_non_terminal_index(string elem, string lhs_non_terminal, int rule_index, int i);
 };
