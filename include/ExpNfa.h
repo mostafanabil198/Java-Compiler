@@ -1,7 +1,7 @@
 #ifndef EXPNFA_H
 #define EXPNFA_H
 using namespace std;
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 
 #include "Tokenizing.h"
 #include "Graph.h"

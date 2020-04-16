@@ -20,7 +20,7 @@ bool ExpNfa::construct_automata(string line)
 
         return true;
     }
-    if(tokens[1] == ":") // case expression
+    if(tokens[1] == ":") // case expression 
     {
         string exp_name = tokens[0];
         tokens.erase(tokens.begin());
@@ -92,7 +92,6 @@ Graph* ExpNfa::recurse_build(vector<string> tokens, int* node_id)
     while (operation == "." && !tokens.empty())
     {
         exp_graph = get_cont(exp_graph, &tokens, node_id);
-        //   testGraph(d_g);
         operation = check_operation(&tokens);
     }
     return general_methods->mergeGraphs(exp_graph, recurse_build(tokens, node_id), operation, node_id);
@@ -108,13 +107,13 @@ bool ExpNfa::construct_nfa()
     nfa_graph->set_start(new_start);
     for (int i = 0; i < exp_graphs.size(); ++i)
     {
-        //testGraph(exp_graphs[i]); //-
         nfa_graph->mergeGraph(exp_graphs[i]->get_tansitions(), exp_graphs[i]->get_all_nodes());
         nfa_graph->addEdge(new_start, exp_graphs[i]->get_start_state(), eps);
     }
     NFA* nfa = NFA::get_instance();
     nfa->set_automata(nfa_graph);
-    // testGraph(nfa); //-
+    cout << endl << "-------------Complete NFA-------------" << endl;
+    test_graph(nfa_graph); //-
     return true;
 }
 
@@ -222,7 +221,6 @@ Graph *ExpNfa::create_graph(vector<string> *tokens, string cur_token, int *node_
     {
         Graph* g = recurse_build(definitions[cur_token], node_id);
         g->get_accept_state()->set_accepted_input(cur_token);
-        //defVisited[token] = true;
         return g;
     }
     if (cur_token.length() == 1 ||cur_token.find("-") != string::npos|| cur_token.at(0) == '\\' )
@@ -372,11 +370,31 @@ Graph *ExpNfa::expanded_graph(string token, int *node_id)
     result->set_accept_state(new_end);
     for (int i = 0; i <sub_graphs.size() ; ++i)
     {
-        cout<<"Graph #" << i << endl << "-----------------------" << endl;
         result->mergeGraph(sub_graphs[i]->get_tansitions(), sub_graphs[i]->get_all_nodes());
         result->addEdge(new_start, sub_graphs[i]->get_start_state(), general_methods->getDefinitions(EPS));
         sub_graphs[i]->get_accept_state()->set_accepted_input(normal_state);
         result->addEdge(sub_graphs[i]->get_accept_state(), new_end, general_methods->getDefinitions(EPS));
     }
     return result;
+}
+
+
+void ExpNfa::test_graph(Graph *g) {
+    vector<Node*> states = g->get_all_nodes();
+    vector<Edge*> edges = g->get_tansitions();
+    Node* start = g->get_start_state();
+
+    cout << "-----States------ "<<endl;
+    for (int i = 0; i < states.size(); ++i) {
+        cout<<"States# " <<states[i]->get_id() << " AcceptInput " << states[i]->get_accepted_input() <<endl;
+        if(states[i]->get_accepted_input() != normal_state)
+            cout << "Accept state : " << states[i]->get_id() << " AcceptInput " << states[i]->get_accepted_input() << " with Priority "<< states[i]->get_priority() <<endl;
+    }
+    cout << "start state : " << start->get_id() << " AcceptInput " << start->get_accepted_input() <<endl;
+    cout << " -----Egdes----- : "<<endl;
+
+    for (int j = 0; j < edges.size(); ++j) {
+
+        cout << "Edge Weight type " << edges[j]->get_weight()->get_regular_def()->get_accept_state()->get_accepted_input() << " from " << edges[j]->get_src()->get_id() << " to " << edges[j]->get_dest()->get_id() << endl;
+    }
 }

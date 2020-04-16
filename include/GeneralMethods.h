@@ -1,11 +1,15 @@
-#ifndef DEFTABLE_H
-#define DEFTABLE_H
+#ifndef GENERALMETHODS_H
+#define GENERALMETHODS_H
+using namespace std;
+
 #include <bits/stdc++.h>
+#include <iostream>
+
 #include "RegularDef.h"
 #include "Graph.h"
-using namespace std;
+
 class RegularDef;
-class Graph;
+class Graph; 
 class GeneralMethods
 {
     public:
@@ -24,6 +28,7 @@ class GeneralMethods
     Graph *mergeAst(Graph *graph_a, int* id);
 
     Graph *mergeCont(Graph *graph_a, Graph *graph_b, int* id);
+    void test_Definitions();
 
     bool is_def_symbol(string s);
     private:
@@ -33,4 +38,4 @@ class GeneralMethods
     GeneralMethods();
 };
 
-#endif // DEFTABLE_H
+#endif // GENERALMETHODS_H

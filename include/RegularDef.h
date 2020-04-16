@@ -1,10 +1,12 @@
 #ifndef REGULARDEF_H
 #define REGULARDEF_H
-#include "Graph.h"
-#include "GeneralMethods.h"
+using namespace std;
 #include <iostream>
 #include <stack>
-using namespace std;
+
+#include "Graph.h"
+#include "GeneralMethods.h"
+
 class RegularDef
 {
     public:
@@ -18,7 +20,6 @@ class RegularDef
 
     private:
         Graph *regular_def;
-
 };
 
-#endif // REGULAR_DEF_H
+#endif // REGULARDEF_H

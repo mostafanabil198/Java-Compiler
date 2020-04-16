@@ -1,10 +1,13 @@
 #ifndef GRAPH_H
 #define GRAPH_H
+using namespace std;
+
 #include <bits/stdc++.h>
+
 #include "Edge.h"
 #include "Node.h"
-#include "RegularDef.h"
-using namespace std;
+#include "RegularDef.h" 
+
 class RegularDef;
 class Node;
 class Edge;

@@ -1,14 +1,12 @@
 #include "ReadInput.h"
-#include <fstream>
-#include <sstream>
-#include <bits/stdc++.h>
 
-ReadInput::ReadInput(string filename)
+ReadInput::ReadInput(string program_file, string rules_file, string output_file )
 {
-    this->file=filename;
-    this->minimized_dfa = DFA_minimization::getInstance();
-    this->transition_table = dfa->getMinimizedDFA();
-    read_input_from_file();
+    this->file=program_file;
+    this->minimized_dfa = DFA_minimization::get_instance(rules_file);
+    this->transition_table = minimized_dfa->get_min_dfa();
+    cout << endl << "------------------Reading The Prog----------------- " << endl;
+    read_input_from_file(output_file);
 }
 
 vector <string> ReadInput::get_line_tokens(string line) {
@@ -16,14 +14,15 @@ vector <string> ReadInput::get_line_tokens(string line) {
     stringstream ssin(line);
     string token;
     while(ssin >> token) {
+        cout << endl << "Read Token:  " << token << endl;
         tokens.push_back(token);
     }
     return tokens;
 }
 
-void ReadInput::Output() {
+void ReadInput::Output(string output_file) {
     ofstream outfile;
-    outfile.open("tokens.txt");
+    outfile.open(output_file);
     for (int i = 0; i < this->tokens.size(); i++) {
         if(tokens[i].at(0) == '\\' && tokens[i].size() > 1){
             tokens[i] = tokens[i].at(1);
@@ -55,7 +54,7 @@ vector<string> ReadInput::get_tokens() {
     return this->tokens;
 }
 
-void ReadInput::read_input_from_file() {
+void ReadInput::read_input_from_file(string output_file) {
     ifstream infile(this->file);
     string line;
     vector <string> line_tokens;
@@ -66,7 +65,7 @@ void ReadInput::read_input_from_file() {
             line_tokens = get_line_tokens(line);
 
             for (int i = 0; i < line_tokens.size(); i++) {//loop on line tokens
-                Node *current_state = dfa->getStartState();
+                Node *current_state = minimized_dfa->get_start_state();
                 Node *last_accepted_state = NULL;
                 int last_accepted_index = -1;
                 int start_index = 0;
@@ -87,7 +86,7 @@ void ReadInput::read_input_from_file() {
                         if (last_accepted_index > -1 && last_accepted_state != nullptr){
 
                             tokens.push_back(last_accepted_state->get_accepted_input());
-                            //cout<<last_accepted_state->get_accepted_input()<<endl;
+                            cout<< "----accept and didnt reach end---" << last_accepted_state->get_accepted_input()<<endl;
                             last_accepted_state = NULL;//reset accepted state
                             start_index = last_accepted_index;//update new start to be at the last accepted index
                             j = last_accepted_index; //after this loop j will be incremented start after last acceptedS
@@ -105,17 +104,17 @@ void ReadInput::read_input_from_file() {
                             }
                         }
                         //reset the current state to start from the beginng for new input
-                        current_state = dfa->getStartState();
+                        current_state = minimized_dfa->get_start_state();
                     }
                     //case reaching end of input and the current state accepts an expression
                     else if (j == line_tokens[i].length() - 1 && current_state->get_accepted_input() != normal_state){
                         tokens.push_back(current_state->get_accepted_input());
-                        //cout<<last_accepted_state->get_accepted_input()<<endl;
+                        cout<< "----accept and reach end---" << last_accepted_state->get_accepted_input()<<endl;
                     }
                 }
             }
            // tokens.push_back("$");
         }
     }
-    Output();
+    Output(output_file);
 }

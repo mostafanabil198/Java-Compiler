@@ -1,6 +1,4 @@
 #include "ReadRules.h"
-#include <fstream>
-#include <sstream>
 
 ReadRules::ReadRules(string file_name)
 {
@@ -22,6 +20,5 @@ bool ReadRules::read_rules() {
     } else {
         return false;
     }
-
 
 }

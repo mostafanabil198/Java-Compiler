@@ -1,6 +1,5 @@
 #include "Edge.h"
 
-
 Edge::Edge(Node *src, Node *dest, RegularDef *weight)
 {
     this->src = src;

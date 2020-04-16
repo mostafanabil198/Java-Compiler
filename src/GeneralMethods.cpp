@@ -1,7 +1,5 @@
 #include "GeneralMethods.h"
-#include "RegularDef.h"
-#include <bits/stdc++.h>
-#include <iostream>
+#include "ExpNfa.h"
 
 static GeneralMethods* instance;
 
@@ -140,7 +138,7 @@ Graph *GeneralMethods::mergeCont(Graph *graph_a, Graph *graph_b, int* i) {
         return graph_b;
 
 
-    //the end state of graph_a will be the start state of graph_b by add an edge between them its weight is eps and set it as N_ACC
+    // The end state of graph_a will be the start state of graph_b by add an edge between them its weight is eps and set it as N_ACC
     Node* start_first = graph_a->get_start_state();
     Node* start_second = graph_b->get_start_state();
     Node* end_first = graph_a->get_accept_state();
@@ -166,4 +164,17 @@ bool GeneralMethods::is_def_symbol(string s) {
             return true;
     }
     return false;
+}
+
+void GeneralMethods::test_Definitions() {
+    map<string, RegularDef*>::iterator it;
+    ExpNfa* c = new ExpNfa();
+
+    for ( it = definitions.begin(); it != definitions.end(); it++ )
+    {
+        std::cout << it->first  // string (key)
+                  << ":" << endl;
+                   c->test_graph(it->second->get_regular_def()) ; // string's value
+                  cout << std::endl ;
+    }
 }

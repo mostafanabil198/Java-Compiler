@@ -1,9 +1,12 @@
 #ifndef NODE_H
 #define NODE_H
-#include <bits/stdc++.h>
-#include "Edge.h"
-#define normal_state "none"
 using namespace std;
+#include <bits/stdc++.h>
+
+#include "Edge.h"
+
+#define normal_state "none"
+
 class Edge;
 class Node
 {
@@ -21,9 +24,9 @@ class Node
 
     private:
     int id;
+    string accepted_input;
     vector< Edge* > entering_Edges;
     vector<Edge*> leaving_Edges;
-    string accepted_input;
     int priority;
 };
 

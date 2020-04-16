@@ -11,7 +11,7 @@ class NFA
         static NFA* get_instance();
         Graph* get_automata();
         void set_automata(Graph* graph);
-        void read_input();
+        void read_input(string rules_file);
 
     protected:
 
