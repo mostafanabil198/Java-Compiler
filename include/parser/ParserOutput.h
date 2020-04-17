@@ -9,13 +9,12 @@ class ParserOutput
 {
     public:
         ParserOutput();
+        void derive(vector<string> tokens);
 
     protected:
 
     private:
         stack<string> parsing_stack;
-        vector<string> tokens;
-        void derive();
 };
 
 #endif // PARSEROUTPUT_H
