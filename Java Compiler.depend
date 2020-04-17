@@ -4,28 +4,30 @@
 	"ReadInput.h"
 	"Parser.h"
 
-1584994126 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/main.cpp
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/main.cpp
 	<iostream>
+	"ReadInput.h"
+	"Parser.h"
 
-1585007596 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Edge.cpp
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Edge.cpp
 	"Edge.h"
 
-1585012650 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Edge.h
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Edge.h
 	<string>
 	"Node.h"
 	"RegularDef.h"
 
-1585012597 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Node.h
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Node.h
 	<bits/stdc++.h>
 	"Edge.h"
 
-1585014602 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/RegularDef.h
-	"Graph.h"
-	"GeneralMethods.h"
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/RegularDef.h
 	<iostream>
 	<stack>
+	"Graph.h"
+	"GeneralMethods.h"
 
-1585012865 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Graph.h
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/Graph.h
 	<bits/stdc++.h>
 	"Edge.h"
 	"Node.h"
@@ -36,18 +38,14 @@
 	"RegularDef.h"
 	"Graph.h"
 
-1585009398 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Node.cpp
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Node.cpp
 	"Node.h"
-	"Edge.h"
-	<bits/stdc++.h>
 
-1585014602 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/RegularDef.cpp
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/RegularDef.cpp
 	"RegularDef.h"
 
-1585013240 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Graph.cpp
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/Graph.cpp
 	"Graph.h"
-	<bits/stdc++.h>
-	"Node.h"
 
 1585013536 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/DefTable.cpp
 	"DefTable.h"
@@ -55,16 +53,15 @@
 	<bits/stdc++.h>
 	<iostream>
 
-1585070416 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/GeneralMethods.h
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/GeneralMethods.h
 	<bits/stdc++.h>
+	<iostream>
 	"RegularDef.h"
 	"Graph.h"
 
-1585070416 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/GeneralMethods.cpp
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/GeneralMethods.cpp
 	"GeneralMethods.h"
-	"RegularDef.h"
-	<bits/stdc++.h>
-	<iostream>
+	"ExpNfa.h"
 
 1585197865 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/Edge.cpp
 	"Edge.h"
@@ -207,10 +204,16 @@
 
 1585169262 /home/nashar/Desktop/c projects/Java-Compiler/include/ExpNfa.h
 
-1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/ExpNfa.cpp
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/ExpNfa.cpp
 	"ExpNfa.h"
 
-1585169552 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/ExpNfa.h
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/ExpNfa.h
+	<bits/stdc++.h>
+	"Tokenizing.h"
+	"Graph.h"
+	"NFA.h"
+	"RegularDef.h"
+	"GeneralMethods.h"
 
 1585169552 9bb36ce91061414159919bf022bee6c6f03a4
 	<bits/stdc++.h>
@@ -279,18 +282,21 @@
 
 1585169262 source:/home/nashar/Desktop/c projects/Java-Compiler/src/ReadRules.cpp
 
-1585169552 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/NFA.h
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/NFA.h
 	"ReadRules.h"
 	"Graph.h"
 
-1585169552 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/ReadRules.h
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/ReadRules.h
 	<bits/stdc++.h>
+	<fstream>
+	<sstream>
 	"ExpNfa.h"
 
-1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/NFA.cpp
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/NFA.cpp
 	"NFA.h"
 
-1585169552 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/ReadRules.cpp
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/ReadRules.cpp
+	"ReadRules.h"
 
 1585169262 source:/home/nashar/Desktop/c projects/Java-Compiler/src/ExpNfa.cpp
 	"ExpNfa.h"
@@ -396,4 +402,87 @@
 
 1586904322 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/ParserOutput.cpp
 	"ParserOutput.h"
+
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/ReadInput.h
+	<bits/stdc++.h>
+	<fstream>
+	<sstream>
+	"RegularDef.h"
+	"Node.h"
+	"DFA_minimization.h"
+
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/DFA_minimization.h
+	<vector>
+	<map>
+	<set>
+	<iterator>
+	<string.h>
+	<iostream>
+	"RegularDef.h"
+	"Node.h"
+	"DFA.h"
+	"Graph.h"
+	"GeneralMethods.h"
+
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/DFA.h
+	<vector>
+	<map>
+	<set>
+	<list>
+	<iostream>
+	<algorithm>
+	"RegularDef.h"
+	"Node.h"
+	"NFA.h"
+	"GeneralMethods.h"
+
+1586997691 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/parser/Parser.h
+	<bits/stdc++.h>
+	<iostream>
+	"StartGenerator.h"
+	"FollowGenerator.h"
+	"ParserOutput.h"
+	"ParserTable.h"
+
+1586994713 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/parser/StartGenerator.h
+	"ParserTable.h"
+	<bits/stdc++.h>
+	<iostream>
+	<bits/stdc++.h>
+
+1586994569 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/parser/FollowGenerator.h
+	<bits/stdc++.h>
+	<iostream>
+
+1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/parser/ParserOutput.h
+	<bits/stdc++.h>
+	<iostream>
+
+1587000200 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/parser/ParserTable.h
+	<bits/stdc++.h>
+	<iostream>
+
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/DFA.cpp
+	"DFA.h"
+
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/DFA_minimization.cpp
+	"DFA_minimization.h"
+
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/parser/FollowGenerator.cpp
+	"parser/FollowGenerator.h"
+
+1586999958 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/parser/Parser.cpp
+	"parser/Parser.h"
+
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/parser/ParserOutput.cpp
+	"ParserOutput.h"
+
+1586991779 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/ReadInput.cpp
+	"ReadInput.h"
+
+1587000251 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/parser/ParserTable.cpp
+	"ParserTable.h"
+
+1587001030 source:/media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/src/parser/StartGenerator.cpp
+	"parser/StartGenerator.h"
 

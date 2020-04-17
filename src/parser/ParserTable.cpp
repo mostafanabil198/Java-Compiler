@@ -22,7 +22,14 @@ vector<vector<string>> ParserTable::get_production(string key){
 void ParserTable::add_production(string key, vector<string> production){
     productions[key].push_back(production);
 }
+
+unordered_map<string, vector<vector<string>>> ParserTable::get_productions_table(){
+    return this->productions;
+}
 // Start table
+bool ParserTable::has_start(string key){
+    return (starts.find(key) != starts.end());
+}
 vector<pair<string, vector<string>>> ParserTable::get_start(string key){
     return starts[key];
 }
@@ -45,6 +52,9 @@ unordered_set<string> ParserTable::get_terminals(){
 }
 void ParserTable::generate_parser_table(){
     //
+}
+bool ParserTable::is_non_terminal(string word){
+    return (productions.find(word) != productions.end());
 }
 
 void ParserTable::add_terminal(string terminal){

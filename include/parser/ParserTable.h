@@ -14,7 +14,9 @@ class ParserTable
         // Productions table
         vector<vector<string>> get_production(string key);
         void add_production(string key, vector<string> production);
+        unordered_map<string, vector<vector<string>>> get_productions_table();
         // Start table
+        bool has_start(string key);
         vector<pair<string, vector<string>>> get_start(string key);
         void add_start(string key, pair<string, vector<string>> start);
         // Follow table
@@ -25,6 +27,7 @@ class ParserTable
         void add_has_eps(string key);
 
         unordered_set<string> get_terminals();
+        bool is_non_terminal(string word);
         void add_terminal(string terminal);
         void generate_parser_table();
 
@@ -62,6 +65,7 @@ class ParserTable
 
         unordered_set<string> has_eps;
         unordered_set<string> terminals;
+        //to start the stack with
         string first_non_terminal;
 
 };

@@ -3,7 +3,6 @@
 
 #include <bits/stdc++.h>
 #include <iostream>
-
 #include "StartGenerator.h"
 #include "FollowGenerator.h"
 #include "ParserOutput.h"
