@@ -28,6 +28,7 @@ void Parser::read_rules(string CFG_file)
     string line;
     string lhs_non_terminal;
     int rule_index;
+    int rule_number = 0;
     if(infile.is_open())
     {
         while (getline(infile, line))
@@ -37,9 +38,11 @@ void Parser::read_rules(string CFG_file)
             vector<string> production_rules;
             if(line[0] == '#')   // new production
             {
+            rule_number++;
                 line = line.substr(1, line.size() - 1);
                 vector<string> production_elems = split2(line, " = ");
                 lhs_non_terminal = remove_spaces(production_elems[0]);
+                if(rule_number == 1) ParserTable::getInstance()->set_first_non_terminal(lhs_non_terminal);
                 rule_index = 0;
                 production_rules = split2(production_elems[1], "| ");
             }
