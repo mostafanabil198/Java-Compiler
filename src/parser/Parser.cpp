@@ -3,18 +3,18 @@
 Parser::Parser(string CFG_file)
 {
     read_rules(CFG_file);
+    start_generator.generate_start();
+    follow_generator.generate_follow();
+    ParserTable::getInstance()->generate_parser_table();
+
 
     ParserTable::getInstance()->print_productions();
-    ParserTable::getInstance()->print_non_terminal_indexing();
-
+    //ParserTable::getInstance()->print_non_terminal_indexing();
     //ParserTable::getInstance()->print_has_eps();
     //ParserTable::getInstance()->print_terminals();
-    start_generator.generate_start();
-    //ParserTable::getInstance()->print_starts();
-    cout<<"okay"<<endl;
-    follow_generator.generate_follow();
-    cout << "tmm"<<endl;
+    ParserTable::getInstance()->print_starts();
     ParserTable::getInstance()->print_follows();
+    ParserTable::getInstance()->print_parsing_table();
 }
 
 

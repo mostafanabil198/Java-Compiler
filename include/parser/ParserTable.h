@@ -35,9 +35,9 @@ class ParserTable
         bool add_parsing_table_entry(string non_terminal, string terminal, vector<string> production_entry);
         vector<string> get_parsing_table_entry(string non_terminal, string terminal);
         bool generate_parser_table();
-        bool is_entry_empty();
-        bool is_entry_epsilon();
-        bool is_entry_sync();
+        bool is_entry_empty(string non_terminal, string terminal);
+        bool is_entry_epsilon(string non_terminal, string terminal);
+        bool is_entry_sync(string non_terminal, string terminal);
         // Non Terminal Indexing
         vector<pair<string, pair<int, int>>> get_non_terminal_indexing(string non_terminal);
         void add_non_terminal_index(string non_terminal, pair<string, pair<int, int>> index);
