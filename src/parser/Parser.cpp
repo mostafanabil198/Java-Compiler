@@ -7,10 +7,14 @@ Parser::Parser(string CFG_file)
     ParserTable::getInstance()->print_productions();
     ParserTable::getInstance()->print_non_terminal_indexing();
 
-    ParserTable::getInstance()->print_has_eps();
-    ParserTable::getInstance()->print_terminals();
+    //ParserTable::getInstance()->print_has_eps();
+    //ParserTable::getInstance()->print_terminals();
     start_generator.generate_start();
-    ParserTable::getInstance()->print_starts();
+    //ParserTable::getInstance()->print_starts();
+    cout<<"okay"<<endl;
+    follow_generator.generate_follow();
+    cout << "tmm"<<endl;
+    ParserTable::getInstance()->print_follows();
 }
 
 

@@ -17,6 +17,7 @@ class ParserTable
         unordered_map<string, vector<vector<string>>> get_productions_table();
         // Start table
         bool has_start(string key);
+        bool has_follow(string key);
         vector<pair<string, vector<string>>> get_start(string key);
         void add_start(string key, pair<string, vector<string>> start);
         // Follow table

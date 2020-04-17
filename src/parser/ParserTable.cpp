@@ -30,6 +30,9 @@ unordered_map<string, vector<vector<string>>> ParserTable::get_productions_table
 bool ParserTable::has_start(string key){
     return (starts.find(key) != starts.end());
 }
+bool ParserTable::has_follow(string key){
+    return (follows.find(key) != follows.end());
+}
 vector<pair<string, vector<string>>> ParserTable::get_start(string key){
     return starts[key];
 }
