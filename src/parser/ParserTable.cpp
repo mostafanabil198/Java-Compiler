@@ -35,8 +35,10 @@ bool ParserTable::has_start(string key)
 {
     return (starts.find(key) != starts.end());
 }
-vector<pair<string, vector<string>>> ParserTable::get_start(string key)
-{
+bool ParserTable::has_follow(string key){
+    return (follows.find(key) != follows.end());
+}
+vector<pair<string, vector<string>>> ParserTable::get_start(string key){
     return starts[key];
 }
 void ParserTable::add_start(string key, pair<string, vector<string>> start)

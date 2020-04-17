@@ -23,6 +23,7 @@ class ParserTable
         // Follow table
         unordered_set<string> get_follow(string key);
         void add_follow(string key, string follow);
+        bool has_follow(string key);
         // Has Epsilon set
         bool has_epsilon(string key);
         void add_has_eps(string key);
