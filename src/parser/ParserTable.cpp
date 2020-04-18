@@ -75,7 +75,11 @@ bool ParserTable::add_parsing_table_entry(string non_terminal, string terminal, 
         pair<string, unordered_map<string, vector<string>>> t = *parsing_table.find(non_terminal);
         if (t.second.find(terminal) != t.second.end() )
         {
-            return false;
+            if(production_entry[0] == EPSILON){
+                return false;
+            } else {
+                return true;
+            }
         }
     }
     parsing_table[non_terminal][terminal] = production_entry;
@@ -94,7 +98,7 @@ bool ParserTable::generate_parser_table()
         string non_terminal = production.first;
         for(auto start : get_start(non_terminal))
         {
-            if(start.first != "\L")
+            if(start.first != "\\L")
             {
                 if(!add_parsing_table_entry(non_terminal, start.first, start.second))
                 {
@@ -133,6 +137,45 @@ bool ParserTable::generate_parser_table()
     }
     return unambigous;
 }
+
+bool ParserTable::is_entry_empty(string non_terminal, string terminal){
+    if(parsing_table.find(non_terminal) != parsing_table.end())
+    {
+        pair<string, unordered_map<string, vector<string>>> t = *parsing_table.find(non_terminal);
+        if (t.second.find(terminal) != t.second.end() )
+        {
+           return false;
+        }
+    }
+    return true;
+}
+bool ParserTable::is_entry_epsilon(string non_terminal, string terminal){
+    if(parsing_table.find(non_terminal) != parsing_table.end())
+    {
+        pair<string, unordered_map<string, vector<string>>> t = *parsing_table.find(non_terminal);
+        if (t.second.find(terminal) != t.second.end() )
+        {
+            if(t.second[terminal][0] == EPSILON){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+bool ParserTable::is_entry_sync(string non_terminal, string terminal){
+    if(parsing_table.find(non_terminal) != parsing_table.end())
+    {
+        pair<string, unordered_map<string, vector<string>>> t = *parsing_table.find(non_terminal);
+        if (t.second.find(terminal) != t.second.end() )
+        {
+            if(t.second[terminal][0] == SYNC){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 bool ParserTable::is_non_terminal(string word)
 {
     return (productions.find(word) != productions.end());
@@ -192,7 +235,7 @@ void ParserTable::print_parsing_table()
         cout << non_terminal.first << ":" << endl;
         for(auto terminal : non_terminal.second)
         {
-            cout << "     " << terminal.first << "->";
+            cout << "  " << terminal.first << "->";
             for( auto elem : terminal.second)
             {
                 cout << elem << " ";

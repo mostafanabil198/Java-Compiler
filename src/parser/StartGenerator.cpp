@@ -47,8 +47,11 @@ void StartGenerator::get_starts(string current_non_terminal)
 
                 for(auto elem_starts : ParserTable::getInstance()->get_start(elem))
                 {
-                    if(elem_starts.first==EPSILON)
-                        has_epsilon= true;
+                    if(elem_starts.first==EPSILON) {
+                        has_epsilon = true;
+                        // To get the non-terminals taht has Epsilon in first
+                        ParserTable::getInstance()->add_has_eps(current_non_terminal);
+                    }
                     ParserTable::getInstance()->add_start(current_non_terminal,make_pair(elem_starts.first,rule));
                 }
 

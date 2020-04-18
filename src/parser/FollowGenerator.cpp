@@ -41,7 +41,7 @@ void FollowGenerator:: get_follow(string non_terminal)
 
             for(auto elem_starts : ParserTable::getInstance()->get_follow(pos.first))
             {
-                cout << "non terminal = " << non_terminal << "--->" <<elem_starts << endl;
+               // cout << "non terminal = " << non_terminal << "--->" <<elem_starts << endl;
                 ParserTable::getInstance()->add_follow(non_terminal,elem_starts);
             }
             }
@@ -58,15 +58,15 @@ void FollowGenerator:: get_follow(string non_terminal)
                 //cout << "finish = " << finish << endl;
                 if(finish)
                 {
-                    cout << "pos.first = " << pos.first <<endl;
-                    cout << "terminal = " << cur_productions.at(pos.second.first).at(pos.second.second+1) <<endl;
+                  //  cout << "pos.first = " << pos.first <<endl;
+                  //  cout << "terminal = " << cur_productions.at(pos.second.first).at(pos.second.second+1) <<endl;
 
                     if(!ParserTable::getInstance()->has_follow(pos.first))
                     get_follow(pos.first);
 
                     for(auto elem_starts : ParserTable::getInstance()->get_follow(pos.first))
                     {
-                        cout << "non terminal = " << non_terminal << "--->" << elem_starts<< endl;
+                   //     cout << "non terminal = " << non_terminal << "--->" << elem_starts<< endl;
                         ParserTable::getInstance()->add_follow(non_terminal,elem_starts);
                     }
 
@@ -86,7 +86,7 @@ void FollowGenerator:: evaluate_next_production(vector<vector<string>> current,i
     string production = current.at(i).at(j);
     if(!ParserTable::getInstance()->is_non_terminal(production))
     {
-        cout << "non terminal = " << non_terminal << "--->" << production<< endl;
+      //  cout << "non terminal = " << non_terminal << "--->" << production<< endl;
         ParserTable::getInstance()->add_follow(non_terminal,production);
     }
     else
@@ -96,7 +96,7 @@ void FollowGenerator:: evaluate_next_production(vector<vector<string>> current,i
         {
             if(!(start.first==EPSILON))
             {
-                cout << "non terminal = " << non_terminal << "--->" << start.first<< endl;
+            //    cout << "non terminal = " << non_terminal << "--->" << start.first<< endl;
                 ParserTable::getInstance()->add_follow(non_terminal,start.first);
 
             }
