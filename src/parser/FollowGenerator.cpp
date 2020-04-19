@@ -50,8 +50,8 @@ void FollowGenerator:: get_follow(string non_terminal)
         else
         {
 
-            if(pos.first != cur_productions.at(pos.second.first).at(pos.second.second+1))
-            {
+//            if(pos.first != cur_productions.at(pos.second.first).at(pos.second.second+1))
+          //  {
 
                 //cout << "alhbd = " << cur_productions.at(pos.second.first).at(pos.second.second+1) << endl;
                 evaluate_next_production(cur_productions,pos.second.first,pos.second.second+1,non_terminal);
@@ -71,7 +71,7 @@ void FollowGenerator:: get_follow(string non_terminal)
                     }
 
                 }
-            }
+           // }
 
         }
 

@@ -9,16 +9,17 @@ Parser::Parser(string CFG_file)
     // Generate Follow Table
     follow_generator.generate_follow();
     // Generate Parsing Table
-    ParserTable::getInstance()->generate_parser_table();
+    bool unambigous = ParserTable::getInstance()->generate_parser_table();
     // Generate tokens and Compare the gramer and parse the tokens as input
-    // ReadInput *r = new ReadInput("Test/program.txt","Test/rules.txt" ,"tokens.txt");
-    parser_output.derive(read_tokens("tokens.txt"));
+    //ReadInput *r = new ReadInput("Test/program.txt","Test/rules.txt" ,"tokens.txt");
 
     // ---- >Printings
+    if(unambigous) parser_output.derive(read_tokens("tokens.txt"));
+
     ParserTable::getInstance()->print_productions();
-    //ParserTable::getInstance()->print_non_terminal_indexing();
-    //ParserTable::getInstance()->print_has_eps();
-    //ParserTable::getInstance()->print_terminals();
+    ParserTable::getInstance()->print_non_terminal_indexing();
+    ParserTable::getInstance()->print_has_eps();
+    ParserTable::getInstance()->print_terminals();
     ParserTable::getInstance()->print_starts();
     ParserTable::getInstance()->print_follows();
     ParserTable::getInstance()->print_parsing_table();
@@ -145,6 +146,7 @@ vector<string> Parser::read_tokens(string tokens_file){
                 continue;
             tokens.push_back(token);
         }
+        tokens.push_back("$");
     }
     return tokens;
 }
