@@ -2,14 +2,20 @@
 
 Parser::Parser(string CFG_file)
 {
+    // Read Rules of CFG
     read_rules(CFG_file);
+    // Generate Start Table
     start_generator.generate_start();
+    // Generate Follow Table
     follow_generator.generate_follow();
+    // Generate Parsing Table
     ParserTable::getInstance()->generate_parser_table();
+    // Generate tokens and Compare the gramer and parse the tokens as input
+    // ReadInput *r = new ReadInput("Test/program.txt","Test/rules.txt" ,"tokens.txt");
+    parser_output.derive(read_tokens("tokens.txt"));
 
-
+    // ---- >Printings
     ParserTable::getInstance()->print_productions();
-
     //ParserTable::getInstance()->print_non_terminal_indexing();
     //ParserTable::getInstance()->print_has_eps();
     //ParserTable::getInstance()->print_terminals();
@@ -129,3 +135,16 @@ vector<string> Parser::split(string line, char del)
     return words;
 }
 
+vector<string> Parser::read_tokens(string tokens_file){
+    ifstream infile(tokens_file);
+    string token;
+    vector<string> tokens;
+    if(infile.is_open()) {
+        while (getline(infile, token)) {
+            if(token.length() == 0 || token == " ")
+                continue;
+            tokens.push_back(token);
+        }
+    }
+    return tokens;
+}

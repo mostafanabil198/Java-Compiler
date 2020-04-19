@@ -386,18 +386,19 @@
 	<bits/stdc++.h>
 	<iostream>
 
-1587171230 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/Parser.cpp
+1587315421 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/Parser.cpp
 	"parser/Parser.h"
 
-1587146605 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/Parser.h
+1587315560 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/Parser.h
 	<bits/stdc++.h>
 	<iostream>
 	"StartGenerator.h"
 	"FollowGenerator.h"
 	"ParserOutput.h"
 	"ParserTable.h"
+	"ReadInput.h"
 
-1587171614 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/StartGenerator.cpp
+1587172158 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/StartGenerator.cpp
 	"parser/StartGenerator.h"
 
 1587146605 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/StartGenerator.h
@@ -413,11 +414,13 @@
 	<bits/stdc++.h>
 	<iostream>
 
-1587160319 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/ParserOutput.h
+1587172788 /media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/include/parser/ParserOutput.h
 	<bits/stdc++.h>
 	<iostream>
+	<stack>
+	"ParserTable.h"
 
-1587160269 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/ParserOutput.cpp
+1587314333 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/src/parser/ParserOutput.cpp
 	"ParserOutput.h"
 
 1586991779 /media/tarek/New Volume/colleaguesems/thirdyear/secondsemester/compilers/compiler/Java-Compiler/include/ReadInput.h

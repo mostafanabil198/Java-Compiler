@@ -7,6 +7,7 @@
 #include "FollowGenerator.h"
 #include "ParserOutput.h"
 #include "ParserTable.h"
+#include "ReadInput.h"
 
 using namespace std;
 class Parser
@@ -21,6 +22,7 @@ class Parser
         FollowGenerator follow_generator;
         ParserOutput parser_output;
         void read_rules(string CFG_file);
+        vector<string> read_tokens(string tokens_file);
         string remove_spaces(string str);
         vector<string> split(string line, char del);
         vector<string> split2(string line, string del);
