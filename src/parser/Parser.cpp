@@ -9,6 +9,7 @@ Parser::Parser(string CFG_file)
 
 
     ParserTable::getInstance()->print_productions();
+
     //ParserTable::getInstance()->print_non_terminal_indexing();
     //ParserTable::getInstance()->print_has_eps();
     //ParserTable::getInstance()->print_terminals();

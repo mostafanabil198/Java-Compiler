@@ -8,6 +8,7 @@ ParserOutput::ParserOutput()
 
 void ParserOutput:: derive(vector<string> tokens)
 {
+    cout << "************OUTPUT********************"<< endl;
     parsing_stack.push("$");
     parsing_stack.push(ParserTable::getInstance()->get_first_non_terminal());
     int index = 0;
@@ -26,7 +27,7 @@ void ParserOutput:: derive(vector<string> tokens)
             else
             {
 
-                cout << "ERROR : Top of stack: " << top << "didnot match with " << tokens.at(index) << endl;
+                cout << "ERROR : Top of stack: " << top << " didnot match with " << tokens.at(index) << endl;
 
                 parsing_stack.pop();
             }
@@ -47,7 +48,7 @@ void ParserOutput:: derive(vector<string> tokens)
             }
             else if(ParserTable::getInstance()->is_entry_empty(top,tokens.at(index)))
             {
-                cout << "ERROR : illegal "<< top << "discard " << tokens.at(index) << endl;
+                cout << "ERROR : illegal "<< top << " discard " << tokens.at(index) << endl;
                 index ++ ;
 
             }
