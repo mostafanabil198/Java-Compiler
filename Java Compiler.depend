@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1587329261 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/main.cpp
+1587330305 source:/media/mostafanabil198/New Volume1/Kolya/3rd-year/2nd-term/compilers/project/Java Compiler/main.cpp
 	<iostream>
 	"ReadInput.h"
 	"Parser.h"
