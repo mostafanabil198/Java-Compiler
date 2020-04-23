@@ -53,6 +53,10 @@ void FollowGenerator:: get_follow(string non_terminal)
         }
         else
         {
+
+//            if(pos.first != cur_productions.at(pos.second.first).at(pos.second.second+1))
+          //  {
+
          // if that nonterminal is not the last symbol .so, check the next symbol is it terminal or non terminal
                 evaluate_next_production(cur_productions,pos.second.first,pos.second.second+1,non_terminal);
                 // if the first of the next nonterminal has epsilon , get the follow of the left non terminal
@@ -67,6 +71,8 @@ void FollowGenerator:: get_follow(string non_terminal)
                     }
 
                 }
+           // }
+
         }
 
 
