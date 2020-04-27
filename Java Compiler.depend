@@ -561,6 +561,7 @@
 1587173514 source:/home/nashar/Desktop/c projects/Java-Compiler/src/parser/FollowGenerator.cpp
 	"parser/FollowGenerator.h"
 
+<<<<<<< HEAD
 1585847371 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\dfa.cpp
 	"DFA.h"
 
@@ -577,43 +578,112 @@
 	"GeneralMethods.h"
 
 1585847993 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\regulardef.h
+=======
+1587600406 source:/home/merna/Java-Compiler/main.cpp
+	<iostream>
+	"ReadInput.h"
+	"Parser.h"
+
+1587326504 /home/merna/Java-Compiler/include/ReadInput.h
+	<bits/stdc++.h>
+	<fstream>
+	<sstream>
+	"RegularDef.h"
+	"Node.h"
+	"DFA_minimization.h"
+
+1587326504 /home/merna/Java-Compiler/include/RegularDef.h
+>>>>>>> cc9ffa01e4eef93618459f64a6ccc7585803ab17
 	<iostream>
 	<stack>
 	"Graph.h"
 	"GeneralMethods.h"
 
+<<<<<<< HEAD
 1585847901 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\graph.h
+=======
+1587326504 /home/merna/Java-Compiler/include/Graph.h
+>>>>>>> cc9ffa01e4eef93618459f64a6ccc7585803ab17
 	<bits/stdc++.h>
 	"Edge.h"
 	"Node.h"
 	"RegularDef.h"
 
+<<<<<<< HEAD
 1585847878 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\edge.h
+=======
+1587326504 /home/merna/Java-Compiler/include/Edge.h
+>>>>>>> cc9ffa01e4eef93618459f64a6ccc7585803ab17
 	<string>
 	"Node.h"
 	"RegularDef.h"
 
+<<<<<<< HEAD
 1585210519 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\node.h
 	<bits/stdc++.h>
 	"Edge.h"
 
 1585847966 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\generalmethods.h
+=======
+1587326504 /home/merna/Java-Compiler/include/Node.h
+	<bits/stdc++.h>
+	"Edge.h"
+
+1587326504 /home/merna/Java-Compiler/include/GeneralMethods.h
+>>>>>>> cc9ffa01e4eef93618459f64a6ccc7585803ab17
 	<bits/stdc++.h>
 	<iostream>
 	"RegularDef.h"
 	"Graph.h"
 
+<<<<<<< HEAD
 1585846967 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\nfa.h
 	"ReadRules.h"
 	"Graph.h"
 
 1585847905 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\readrules.h
+=======
+1587326504 /home/merna/Java-Compiler/include/DFA_minimization.h
+	<vector>
+	<map>
+	<set>
+	<iterator>
+	<string.h>
+	<iostream>
+	"RegularDef.h"
+	"Node.h"
+	"DFA.h"
+	"Graph.h"
+	"GeneralMethods.h"
+
+1587326504 /home/merna/Java-Compiler/include/DFA.h
+	<vector>
+	<map>
+	<set>
+	<list>
+	<iostream>
+	<algorithm>
+	"RegularDef.h"
+	"Node.h"
+	"NFA.h"
+	"GeneralMethods.h"
+
+1587326504 /home/merna/Java-Compiler/include/NFA.h
+	"ReadRules.h"
+	"Graph.h"
+
+1587326504 /home/merna/Java-Compiler/include/ReadRules.h
+>>>>>>> cc9ffa01e4eef93618459f64a6ccc7585803ab17
 	<bits/stdc++.h>
 	<fstream>
 	<sstream>
 	"ExpNfa.h"
 
+<<<<<<< HEAD
 1585847890 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\expnfa.h
+=======
+1587326504 /home/merna/Java-Compiler/include/ExpNfa.h
+>>>>>>> cc9ffa01e4eef93618459f64a6ccc7585803ab17
 	<bits/stdc++.h>
 	"Tokenizing.h"
 	"Graph.h"
@@ -621,7 +691,11 @@
 	"RegularDef.h"
 	"GeneralMethods.h"
 
+<<<<<<< HEAD
 1585847921 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\tokenizing.h
+=======
+1587326504 /home/merna/Java-Compiler/include/Tokenizing.h
+>>>>>>> cc9ffa01e4eef93618459f64a6ccc7585803ab17
 	<bits/stdc++.h>
 	<string>
 	<vector>
@@ -631,6 +705,7 @@
 	<algorithm>
 	"GeneralMethods.h"
 
+<<<<<<< HEAD
 1585847524 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\dfa_minimization.cpp
 	"DFA_minimization.h"
 
@@ -736,3 +811,87 @@
 1587591209 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\parser\parser.cpp
 	"parser/Parser.h"
 
+=======
+1587326504 /home/merna/Java-Compiler/include/parser/Parser.h
+	<bits/stdc++.h>
+	<iostream>
+	"StartGenerator.h"
+	"FollowGenerator.h"
+	"ParserOutput.h"
+	"ParserTable.h"
+	"ReadInput.h"
+
+1587326504 /home/merna/Java-Compiler/include/parser/StartGenerator.h
+	"ParserTable.h"
+	<bits/stdc++.h>
+	<iostream>
+	<bits/stdc++.h>
+
+1587326504 /home/merna/Java-Compiler/include/parser/ParserTable.h
+	<bits/stdc++.h>
+	<iostream>
+
+1587326504 /home/merna/Java-Compiler/include/parser/FollowGenerator.h
+	"ParserTable.h"
+	<bits/stdc++.h>
+	<iostream>
+
+1587326504 /home/merna/Java-Compiler/include/parser/ParserOutput.h
+	<bits/stdc++.h>
+	<iostream>
+	<stack>
+	"ParserTable.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/DFA.cpp
+	"DFA.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/DFA_minimization.cpp
+	"DFA_minimization.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/Edge.cpp
+	"Edge.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/ExpNfa.cpp
+	"ExpNfa.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/GeneralMethods.cpp
+	"GeneralMethods.h"
+	"ExpNfa.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/Graph.cpp
+	"Graph.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/NFA.cpp
+	"NFA.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/Node.cpp
+	"Node.h"
+
+1587599969 source:/home/merna/Java-Compiler/src/parser/FollowGenerator.cpp
+	"parser/FollowGenerator.h"
+
+1587599969 source:/home/merna/Java-Compiler/src/parser/Parser.cpp
+	"parser/Parser.h"
+
+1587327985 source:/home/merna/Java-Compiler/src/parser/ParserOutput.cpp
+	"ParserOutput.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/parser/ParserTable.cpp
+	"ParserTable.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/parser/StartGenerator.cpp
+	"parser/StartGenerator.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/ReadInput.cpp
+	"ReadInput.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/ReadRules.cpp
+	"ReadRules.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/RegularDef.cpp
+	"RegularDef.h"
+
+1587326504 source:/home/merna/Java-Compiler/src/Tokenizing.cpp
+	"Tokenizing.h"
+
+>>>>>>> cc9ffa01e4eef93618459f64a6ccc7585803ab17
