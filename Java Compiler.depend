@@ -561,3 +561,178 @@
 1587173514 source:/home/nashar/Desktop/c projects/Java-Compiler/src/parser/FollowGenerator.cpp
 	"parser/FollowGenerator.h"
 
+1585847371 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\dfa.cpp
+	"DFA.h"
+
+1585847397 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\dfa.h
+	<vector>
+	<map>
+	<set>
+	<list>
+	<iostream>
+	<algorithm>
+	"RegularDef.h"
+	"Node.h"
+	"NFA.h"
+	"GeneralMethods.h"
+
+1585847993 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\regulardef.h
+	<iostream>
+	<stack>
+	"Graph.h"
+	"GeneralMethods.h"
+
+1585847901 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\graph.h
+	<bits/stdc++.h>
+	"Edge.h"
+	"Node.h"
+	"RegularDef.h"
+
+1585847878 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\edge.h
+	<string>
+	"Node.h"
+	"RegularDef.h"
+
+1585210519 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\node.h
+	<bits/stdc++.h>
+	"Edge.h"
+
+1585847966 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\generalmethods.h
+	<bits/stdc++.h>
+	<iostream>
+	"RegularDef.h"
+	"Graph.h"
+
+1585846967 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\nfa.h
+	"ReadRules.h"
+	"Graph.h"
+
+1585847905 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\readrules.h
+	<bits/stdc++.h>
+	<fstream>
+	<sstream>
+	"ExpNfa.h"
+
+1585847890 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\expnfa.h
+	<bits/stdc++.h>
+	"Tokenizing.h"
+	"Graph.h"
+	"NFA.h"
+	"RegularDef.h"
+	"GeneralMethods.h"
+
+1585847921 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\tokenizing.h
+	<bits/stdc++.h>
+	<string>
+	<vector>
+	<list>
+	<cstring>
+	<sstream>
+	<algorithm>
+	"GeneralMethods.h"
+
+1585847524 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\dfa_minimization.cpp
+	"DFA_minimization.h"
+
+1585847507 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\dfa_minimization.h
+	<vector>
+	<map>
+	<set>
+	<iterator>
+	<string.h>
+	<iostream>
+	"RegularDef.h"
+	"Node.h"
+	"DFA.h"
+	"Graph.h"
+	"GeneralMethods.h"
+
+1585197865 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\edge.cpp
+	"Edge.h"
+
+1585848028 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\expnfa.cpp
+	"ExpNfa.h"
+
+1585848042 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\generalmethods.cpp
+	"GeneralMethods.h"
+	"ExpNfa.h"
+
+1585197909 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\graph.cpp
+	"Graph.h"
+
+1585846947 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\nfa.cpp
+	"NFA.h"
+
+1585197949 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\node.cpp
+	"Node.h"
+
+1587330728 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\parser\followgenerator.cpp
+	"parser/FollowGenerator.h"
+
+1587159320 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\parser\followgenerator.h
+	"ParserTable.h"
+	<bits/stdc++.h>
+	<iostream>
+
+1587161021 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\parser\parsertable.h
+	<bits/stdc++.h>
+	<iostream>
+
+1587330464 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\parser\parseroutput.cpp
+	"ParserOutput.h"
+
+1587172788 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\parser\parseroutput.h
+	<bits/stdc++.h>
+	<iostream>
+	<stack>
+	"ParserTable.h"
+
+1587326583 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\parser\parsertable.cpp
+	"ParserTable.h"
+
+1587172158 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\parser\startgenerator.cpp
+	"parser/StartGenerator.h"
+
+1587146605 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\parser\startgenerator.h
+	"ParserTable.h"
+	<bits/stdc++.h>
+	<iostream>
+	<bits/stdc++.h>
+
+1585848208 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\readinput.cpp
+	"ReadInput.h"
+
+1585848231 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\readinput.h
+	<bits/stdc++.h>
+	<fstream>
+	<sstream>
+	"RegularDef.h"
+	"Node.h"
+	"DFA_minimization.h"
+
+1585848051 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\readrules.cpp
+	"ReadRules.h"
+
+1585848057 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\regulardef.cpp
+	"RegularDef.h"
+
+1585848069 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\tokenizing.cpp
+	"Tokenizing.h"
+
+1587784387 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\main.cpp
+	<iostream>
+	"ReadInput.h"
+	"Parser.h"
+
+1587315560 d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\include\parser\parser.h
+	<bits/stdc++.h>
+	<iostream>
+	"StartGenerator.h"
+	"FollowGenerator.h"
+	"ParserOutput.h"
+	"ParserTable.h"
+	"ReadInput.h"
+
+1587591209 source:d:\kolya\3rd-year\2nd-term\compilers\project\java compiler\src\parser\parser.cpp
+	"parser/Parser.h"
+
